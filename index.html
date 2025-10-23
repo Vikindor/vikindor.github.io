@@ -1,84 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vikindor</title>
-  <link rel="icon" type="image/png" href="icons/github_icon.png">
-  <style>
-    :root{
-      --bg:#0a0d14;
-      --ink:#e9eefc;
-      --muted:#a9b7db;
-      --acc:#86a8ff;
-      --card:#121826cc;
-      --card-solid:#121826;
-      --stroke:rgba(255,255,255,.08);
-      --glow-card:0 2px 6px rgba(80,120,255,.25), 0 8px 22px rgba(60,100,220,.25);
-      --glow-btn:0 1px 4px rgba(80,120,255,.12), 0 2px 6px rgba(100,140,255,.18);
-      --radius:18px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; color:var(--ink);
-      font:16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Noto Sans", Arial;
-      background:
-        radial-gradient(900px 600px at 90% -10%, #1f2a44, #0a0d14 60%),
-        radial-gradient(600px 500px at -10% 10%, #1b2340, transparent 60%),
-        #0a0d14;
-    }
-    a{color:var(--acc); text-decoration:none}
-    a:hover{text-decoration:none}
-    .wrap{max-width:1000px; margin:0 auto; padding:40px 20px 72px}
-    header{display:flex; gap:22px; align-items:center; margin-bottom:28px}
-    .avatar{width:92px; height:92px; border-radius:50%; overflow:hidden; border:2px solid var(--acc); box-shadow:var(--glow-card)}
-    .avatar img{width:100%; height:100%; object-fit:cover; display:block; border-radius:50%}
-    .title{display:flex; align-items:center; gap:12px; margin:0}
-    .title span{opacity:.8; font-weight:600; letter-spacing:.2px}
-    h1{font-size:30px; line-height:1.2; margin:0}
-    .sub{color:var(--muted); margin-top:2px}
-    .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:10px 14px; border-radius:14px;
-      background:linear-gradient(180deg, #172035, #121a2b);
-      border:1px solid var(--stroke);
-      box-shadow:var(--glow-card);
-    }
-    .badge:hover{background:#1a2238}
-    h3.section-title{margin:34px 0 12px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
-    .grid{display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr))}
-    .card{
-      background:var(--card);
-      backdrop-filter: blur(6px);
-      border:1px solid var(--stroke);
-      border-radius:var(--radius);
-      padding:18px;
-      display:flex; flex-direction:column;
-      box-shadow:var(--glow-card);
-    }
-    .card h2{font-size:18px; margin:0 0 10px}
-    .card p{margin:0 0 16px; color:var(--ink)}
-    .meta{display:flex; gap:8px; flex-wrap:wrap; color:var(--muted); font-size:13px; margin-bottom:10px}
-    .tag{padding:3px 10px; border-radius:999px; border:1px solid var(--stroke); background:#121a2b}
-	.actions {margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px}
-    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; background:#182033; border:1px solid var(--stroke); box-shadow:var(--glow-btn);}
-    .btn:hover{background:#1b2740}
-    .actions .btn{align-self:flex-start}
-	.about{display:grid; grid-template-columns:1fr; gap:18px;}
-	.about .card{display:grid; align-items:center;}
-	.about .card p {margin: 0;}
-	footer {margin-top: 40px; color: var(--muted); font-size: 14px; text-align: center;}
-    code{background:#1a2135; padding:2px 6px; border-radius:6px}
-	.icon-badge {width: 18px; height: 18px; vertical-align: sub;}
-	.icon-card {width: 22px; height: 22px; vertical-align: sub; margin-right: 6px;}
-    @media (prefers-color-scheme: light){
-      :root{--ink:#0c1120; --muted:#465069; --card:#ffffffcc; --card-solid:#fff; --stroke:rgba(0,0,0,.08)}
-      a{color:#3451d1}
-      body{background:linear-gradient(180deg,#eef2ff,#f8faff)}
-    }
-  </style>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vikindor</title>
+    <link rel="icon" type="image/png" href="icons/github_logo.png">
+    <style>
+      :root{
+        --bg:#0a0d14;
+        --ink:#e9eefc;
+        --muted:#a9b7db;
+        --acc:#86a8ff;
+        --card:#121826cc;
+        --card-solid:#121826;
+        --stroke:rgba(255,255,255,.08);
+        --glow-card:0 2px 6px rgba(80,120,255,.25), 0 8px 22px rgba(60,100,220,.25);
+        --glow-btn:0 1px 4px rgba(80,120,255,.12), 0 2px 6px rgba(100,140,255,.18);
+        --radius:18px;
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0; color:var(--ink);
+        font:16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Noto Sans", Arial;
+        background:
+          radial-gradient(900px 600px at 90% -10%, #1f2a44, #0a0d14 60%),
+          radial-gradient(600px 500px at -10% 10%, #1b2340, transparent 60%),
+          repeating-linear-gradient(180deg, #0a0d14 0, #0c101f 600px, #0a0d14 1200px);
+        background-attachment: fixed;
+      }
+      a{color:var(--acc); text-decoration:none}
+      a:hover{text-decoration:none}
+      .wrap{max-width:1000px; margin:0 auto; padding:40px 20px 72px}
+      header{display:flex; gap:22px; align-items:center; margin-bottom:28px}
+      .avatar{width:92px; height:92px; border-radius:50%; overflow:hidden; border:2px solid var(--acc); box-shadow:var(--glow-card)}
+      .avatar img{width:100%; height:100%; object-fit:cover; display:block; border-radius:50%}
+      .title{display:flex; align-items:center; gap:12px; margin:0}
+      .title span{opacity:.8; font-weight:600; letter-spacing:.2px}
+      h1{font-size:30px; line-height:1.2; margin:0}
+      .sub{color:var(--muted); margin-top:2px}
+      .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+      .badge{
+        display:inline-flex; align-items:center; gap:8px;
+        padding:10px 14px; border-radius:14px;
+        background:linear-gradient(180deg, #172035, #121a2b);
+        border:1px solid var(--stroke);
+        box-shadow:var(--glow-card);
+      }
+      .badge:hover{background:#1a2238}
+      h3.section-title{margin:34px 0 12px; font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+      .section{margin-bottom:8px}
+      .grid{
+        display:grid;        
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+		gap:18px;
+      }
+      .card{
+        background:var(--card);
+        backdrop-filter: blur(6px);
+        border:1px solid var(--stroke);
+        border-radius:var(--radius);
+        padding:18px;
+        display:flex; flex-direction:column;
+        box-shadow:var(--glow-card);
+      }
+      .card h2{font-size:18px; margin:0 0 10px}
+      .card p{margin:0 0 16px; color:var(--ink)}
+      .meta{display:flex; gap:8px; flex-wrap:wrap; color:var(--muted); font-size:13px; margin-bottom:10px}
+      .tag{padding:3px 10px; border-radius:999px; border:1px solid var(--stroke); background:#121a2b}
+      .actions{margin-top:auto; display:flex; flex-wrap:wrap; gap:10px}
+      .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; background:#182033; border:1px solid var(--stroke); box-shadow:var(--glow-btn)}
+      .btn:hover{background:#1b2740}
+      .actions .btn{align-self:flex-start}
+      .about{display:grid; grid-template-columns:1fr; gap:18px;}
+      .about .card{display:grid; align-items:center;}
+      .about .card p {margin:0;}
+      footer {margin-top: 40px; color: var(--muted); font-size: 14px; text-align: center;}
+      code{background:#1a2135; padding:2px 6px; border-radius:6px}
+      .icon-badge {width:18px; height:18px; vertical-align:sub;}
+      .icon-card {width:22px; height:22px; vertical-align:sub; margin-right:6px;}
+      @media (max-width: 720px){
+        .grid{ grid-template-columns: 1fr; }
+        .wrap{ padding:24px 16px 64px; }
+        header{ gap:16px; }
+        .avatar{ width:76px; height:76px; }
+        h1{ font-size:26px; }
+      }
+      @media (max-width: 420px){
+        .grid{ grid-template-columns: 1fr; } /* можно убрать — уже задано выше, оставил для единообразия */
+        .icon-badge{ width:16px; height:16px; }
+        .icon-card{ width:20px; height:20px; }
+        .badge{ padding:8px 12px; }
+        .btn{ padding:9px 12px; }
+      }
+    </style>
 </head>
 
 <body>
@@ -92,11 +107,11 @@
           <h1>Vikindor</h1>
           <span>QA</span>
         </div>
-        <div class="sub">Web • Mobile • API</div>
-        <div class="badges" role="navigation">
-          <a class="badge" href="https://github.com/Vikindor" target="_blank" rel="noopener"><img src="icons/github_icon.png" alt="GitHub" class="icon-badge">GitHub</a>
-          <a class="badge" href="mailto:vikindor@proton.me"><img src="icons/mail_icon.png" alt="Mail" class="icon-badge">Mail</a>
-          <a class="badge" href="https://t.me/vikindor" target="_blank" rel="noopener"><img src="icons/telegram_icon.png" alt="Telegram" class="icon-badge">Telegram</a>
+        <div class="sub">Web • API • Mobile</div>
+        <div class="badges">
+          <a class="badge" href="https://github.com/Vikindor" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          <a class="badge" href="mailto:vikindor@proton.me"><img src="icons/mail_icon.png" alt="Mail icon" class="icon-badge">Mail</a>
+          <a class="badge" href="https://t.me/vikindor" target="_blank" rel="noopener"><img src="icons/telegram_logo.png" alt="Telegram logo" class="icon-badge">Telegram</a>
         </div>
       </div>
     </header>
@@ -108,52 +123,85 @@
       </div>
     </section>
 
-    <h3 class="section-title">Projects</h3>
-	
-    <section class="grid">
+    <h3 id="apps" class="section-title">Apps</h3>
+    <section class="section grid">
       <div class="card">
-        <h2><img src="icons/peaktoday_icon.png" alt="Peak" class="icon-card">Peak Today</h2>
+        <h2><img src="icons/peaktoday_logo.png" alt="Peak Today app logo" class="icon-card">Peak Today (Android)</h2>
         <div class="meta">
           <span class="tag">Android</span>
           <span class="tag">Kotlin</span>
           <span class="tag">Open Source</span>
         </div>
-        <p>Minimalist Android timer app inspired by Peak game</p>
+        <p>Minimalist Android map rotation timer for Peak game</p>
         <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/peaktoday-android" target="_blank" rel="noopener"><img src="icons/github_icon.png" alt="GitHub" class="icon-badge">GitHub</a>
+          <a class="btn" href="https://github.com/Vikindor/peaktoday-android" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
         </div>
       </div>
 
       <div class="card">
-        <h2><img src="icons/edge_icon.png" alt="Edge" class="icon-card">Disable Microsoft Edge Update</h2>
+        <h2><img src="icons/peaktoday_logo.png" alt="Peak Today web logo" class="icon-card">Peak Today (Web)</h2>
         <div class="meta">
-          <span class="tag">Windows</span>
-          <span class="tag">Scripts</span>
-          <span class="tag">PowerShell</span>
+          <span class="tag">Web</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Open Source</span>
         </div>
-        <p>Scripts to disable and remove Microsoft Edge auto-updates</p>
+        <p>Browser-based map rotation timer for Peak game</p>
         <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/disable-edge-update" target="_blank" rel="noopener"><img src="icons/github_icon.png" alt="GitHub" class="icon-badge">GitHub</a>
+          <a class="btn" href="https://vikindor.github.io/peaktoday/" target="_blank" rel="noopener"><img src="icons/web_icon.png" alt="Web icon" class="icon-badge">Web page</a>
+          <a class="btn" href="https://github.com/Vikindor/peaktoday" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
         </div>
       </div>
+    </section>
 
+    <h3 id="browser-scripts" class="section-title">Browser Scripts</h3>
+    <section class="section grid">
       <div class="card">
-        <h2><img src="icons/twitch_icon.png" alt="Twitch" class="icon-card">Twitch - Force sort Viewers High to Low</h2>
+        <h2><img src="icons/github_logo.png" alt="GitHub logo" class="icon-card">GitHub - Add Shortcuts To Page Header</h2>
         <div class="meta">
           <span class="tag">Browser</span>
           <span class="tag">Userscript</span>
           <span class="tag">Tampermonkey</span>
         </div>
-        <p>Userscript that auto-sorts Twitch channels by viewers</p>
+        <p>Userscript that adds a customizable shortcut bar to GitHub and Gist headers</p>
         <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/twitch-force-sort-viewers" target="_blank" rel="noopener"><img src="icons/github_icon.png" alt="GitHub" class="icon-badge">GitHub</a>
-		  <a class="btn" href="https://greasyfork.org/en/scripts/549727-twitch-force-sort-viewers-high-to-low" target="_blank" rel="noopener"><img src="icons/greasyfork_icon.png" alt="GreasyFork" class="icon-badge">GreasyFork</a>
-		  <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Force_sort_Viewers_High_to_Low" target="_blank" rel="noopener"><img src="icons/openuserjs_icon.png" alt="OpenUserJS" class="icon-badge">OpenUserJS</a>
+          <a class="btn" href="https://github.com/Vikindor/github-header-shortcuts" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          <a class="btn" href="https://greasyfork.org/en/scripts/553502-github-add-shortcuts-to-page-header" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/GitHub_-_Add_Shortcuts_To_Page_Header" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
         </div>
       </div>
-	  
+
       <div class="card">
-        <h2><img src="icons/rutube_icon.png" alt="Rutube" class="icon-card">Rutube - Block Autoplay</h2>
+        <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Force sort Viewers High to Low</h2>
+        <div class="meta">
+          <span class="tag">Browser</span>
+          <span class="tag">Userscript</span>
+          <span class="tag">Tampermonkey</span>
+        </div>
+        <p>Userscript that auto-sorts Twitch channels by viewer count</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/twitch-force-sort-viewers" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          <a class="btn" href="https://greasyfork.org/en/scripts/549727-twitch-force-sort-viewers-high-to-low" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Force_sort_Viewers_High_to_Low" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Show Stream Language</h2>
+        <div class="meta">
+          <span class="tag">Browser</span>
+          <span class="tag">Userscript</span>
+          <span class="tag">Tampermonkey</span>
+        </div>
+        <p>Userscript that displays a stream’s language tag like [EN], [JA], etc.</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/twitch-show-stream-language" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          <a class="btn" href="https://greasyfork.org/en/scripts/552795-twitch-show-stream-language" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Show_Stream_Language" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><img src="icons/rutube_logo.png" alt="Rutube logo" class="icon-card">Rutube - Block Autoplay</h2>
         <div class="meta">
           <span class="tag">Browser</span>
           <span class="tag">Userscript</span>
@@ -161,17 +209,43 @@
         </div>
         <p>Userscript that blocks video autoplay on Rutube and embeds</p>
         <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/rutube-block-autoplay" target="_blank" rel="noopener"><img src="icons/github_icon.png" alt="GitHub" class="icon-badge">GitHub</a>
-		  <a class="btn" href="https://greasyfork.org/en/scripts/544729-rutube-block-autoplay/" target="_blank" rel="noopener"><img src="icons/greasyfork_icon.png" alt="GreasyFork" class="icon-badge">GreasyFork</a>
-		  <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Rutube_-_Block_Autoplay" target="_blank" rel="noopener"><img src="icons/openuserjs_icon.png" alt="OpenUserJS" class="icon-badge">OpenUserJS</a>
+          <a class="btn" href="https://github.com/Vikindor/rutube-block-autoplay" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          <a class="btn" href="https://greasyfork.org/en/scripts/544729-rutube-block-autoplay/" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Rutube_-_Block_Autoplay" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
         </div>
-      </div>	  
+      </div>
     </section>
 
-    <footer>
-      <p>Hosted on GitHub Pages</p>
-    </footer>
+    <h3 id="tools" class="section-title">System &amp; Dev Tools</h3>
+    <section class="section grid">
+      <div class="card">
+        <h2><img src="icons/edge_logo.png" alt="Edge logo" class="icon-card">Disable Microsoft Edge Update</h2>
+        <div class="meta">
+          <span class="tag">Windows</span>
+          <span class="tag">PowerShell</span>
+          <span class="tag">Scripts</span>
+        </div>
+        <p>Scripts to disable and remove Microsoft Edge auto-updates</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/disable-edge-update" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><img src="icons/github_logo.png" alt="GitHub logo" class="icon-card">Selenoid via Aerokube CM</h2>
+        <div class="meta">
+          <span class="tag">DevOps</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Composite Action</span>
+        </div>
+        <p>Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/selenoid-github-action" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          <a class="btn" href="https://github.com/marketplace/actions/selenoid-via-cm" target="_blank" rel="noopener"><img src="icons/marketplace_icon.png" alt="GitHub Marketplace icon" class="icon-badge">Marketplace</a>
+        </div>
+      </div>
+    </section>
+
   </div>
 </body>
 </html>
-
