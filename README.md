@@ -21,7 +21,8 @@ Personal website and portfolio. Built with **pure HTML and CSS**, featuring a cl
 
 **[vikindor.github.io](https://vikindor.github.io/)**
 
-🛠️ **Tech stack**
+## 🛠️ Tech stack
+
 - HTML5  
 - CSS3 (Grid layout, variables, gradients, responsive design)
 
