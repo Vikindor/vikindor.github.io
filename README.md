@@ -25,7 +25,3 @@ Personal website and portfolio. Built with **pure HTML and CSS**, featuring a cl
 
 - HTML5  
 - CSS3 (Grid layout, variables, gradients, responsive design)
-
----
-
-© 2025 Vikindor
