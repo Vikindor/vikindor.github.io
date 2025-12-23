@@ -93,6 +93,20 @@
         .badge{ padding:8px 12px; }
         .btn{ padding:9px 12px; }
       }
+	  .section-divider {
+        margin: 56px 0;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(90,160,255,0.6),
+          rgba(140,200,255,0.9),
+          rgba(90,160,255,0.6),
+          transparent
+		);
+        box-shadow: 0 0 14px rgba(120,180,255,0.6);
+      }
+	  .card--featured { grid-column: 1 / -1; }
     </style>
 </head>
 
@@ -105,9 +119,9 @@
       <div>
         <div class="title">
           <h1>Vikindor</h1>
-          <span>QA</span>
+          <span>AQA</span>
         </div>
-        <div class="sub">Web • API • Mobile</div>
+        <div class="sub">Java • Selenide • Appium • Web • API • Mobile</div>
         <div class="badges">
           <a class="badge" href="https://github.com/Vikindor" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
           <a class="badge" href="mailto:vikindor@proton.me"><img src="icons/mail_icon.png" alt="Mail icon" class="icon-badge">Mail</a>
@@ -116,10 +130,78 @@
       </div>
     </header>
 
-    <h3 class="section-title">About</h3>
+    <h2 class="section-title">ABOUT</h3>
     <section class="about">
       <div class="card">
-        <p>Passionate about QA, music and video games ✨🎵🎮</p>
+        <p>Experienced and results-oriented QA engineer with 10+ years in QA, including ~2 years in automation. I care about quality, clarity, and tests that actually help teams ship better products.</p>
+      </div>
+    </section>
+	
+    <div class="section-divider"></div>
+    
+    <h2 class="section-title">PORTFOLIO</h3>
+    <section class="section grid">
+      <div class="card card--featured">
+        <h2><img src="icons/todoist_logo.png" alt="Todoist logo" class="icon-card">Multi-Layer Test Automation Framework for Todoist app</h2>
+
+        <div class="meta">
+          <span class="tag">QA Automation</span>
+          <span class="tag">API</span>
+          <span class="tag">Web UI</span>
+          <span class="tag">Android</span>
+          <span class="tag">REST Assured</span>
+          <span class="tag">Java</span>
+          <span class="tag">Selenide</span>
+          <span class="tag">Appium</span>
+          <span class="tag">JUnit 5</span>
+          <span class="tag">Allure</span>
+        </div>
+
+        <p>
+          Enterprise-grade multi-layer test automation framework
+          covering the same product across API, Web UI, and Android
+          platforms. Designed as a multi-module Gradle project with
+          unified reporting, CI integration, and environment-agnostic
+          execution model.
+        </p>
+
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/todoist-test-automation" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+        </div>
+      </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <h2 class="section-title">OTHER PROJECTS</h3>
+
+    <h3 id="tools" class="section-title">Dev Tools</h3>
+    <section class="section grid">
+      <div class="card">
+        <h2><img src="icons/allure_report_logo.png" alt="Allure Report logo" class="icon-card">Allure Report - HTTP Templates </h2>
+        <div class="meta">
+          <span class="tag">Allure</span>
+          <span class="tag">REST Assured</span>
+          <span class="tag">Templates</span>
+        </div>
+        <p>Custom FreeMarker templates for improved Request/Response rendering in Allure Report</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/allure-report-templates" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+        </div>
+      </div>
+	
+      <div class="card">
+        <h2><img src="icons/selenoid_logo.png" alt="Selenoid logo" class="icon-card">Selenoid via Aerokube CM</h2>
+        <div class="meta">
+          <span class="tag">DevOps</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Composite Action</span>
+        </div>
+        <p>Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/selenoid-github-action" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          <a class="btn" href="https://github.com/marketplace/actions/selenoid-via-cm" target="_blank" rel="noopener"><img src="icons/marketplace_icon.png" alt="GitHub Marketplace icon" class="icon-badge">Marketplace</a>
+        </div>
       </div>
     </section>
 
@@ -149,6 +231,35 @@
         <p>Minimalist Android map rotation timer for Peak game</p>
         <div class="actions">
           <a class="btn" href="https://github.com/Vikindor/peaktoday-android" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <h3 id="tools" class="section-title">System</h3>
+    <section class="section grid">
+      <div class="card">
+        <h2><img src="icons/edge_logo.png" alt="Edge logo" class="icon-card">Disable Microsoft Edge Updates</h2>
+        <div class="meta">
+          <span class="tag">Windows</span>
+          <span class="tag">PowerShell</span>
+          <span class="tag">Scripts</span>
+        </div>
+        <p>Scripts for Windows to disable and remove Microsoft Edge auto-updates</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/disable-edge-update" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+        </div>
+      </div>
+	  
+      <div class="card">
+        <h2><img src="icons/asus_crate_logo.png" alt="ASUS Armoury Crate logo" class="icon-card">Remove ASUS Bloatware</h2>
+        <div class="meta">
+          <span class="tag">Windows</span>
+          <span class="tag">PowerShell</span>
+          <span class="tag">Scripts</span>
+        </div>
+        <p>Script for Windows to remove ASUS bloatware and leftovers</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/Vikindor/remove-asus-bloatware" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
         </div>
       </div>
     </section>
@@ -227,65 +338,6 @@
           <a class="btn" href="https://github.com/Vikindor/rutube-block-autoplay" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
           <a class="btn" href="https://greasyfork.org/en/scripts/544729-rutube-block-autoplay/" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
           <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Rutube_-_Block_Autoplay" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
-        </div>
-      </div>
-    </section>
-
-    <h3 id="tools" class="section-title">Dev Tools</h3>
-    <section class="section grid">
-      <div class="card">
-        <h2><img src="icons/selenoid_logo.png" alt="Selenoid logo" class="icon-card">Selenoid via Aerokube CM</h2>
-        <div class="meta">
-          <span class="tag">DevOps</span>
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">Composite Action</span>
-        </div>
-        <p>Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/selenoid-github-action" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-          <a class="btn" href="https://github.com/marketplace/actions/selenoid-via-cm" target="_blank" rel="noopener"><img src="icons/marketplace_icon.png" alt="GitHub Marketplace icon" class="icon-badge">Marketplace</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h2><img src="icons/allure_report_logo.png" alt="Allure Report logo" class="icon-card">Allure Report - HTTP Templates </h2>
-        <div class="meta">
-          <span class="tag">Allure</span>
-          <span class="tag">REST Assured</span>
-          <span class="tag">Templates</span>
-        </div>
-        <p>Custom FreeMarker templates for improved Request/Response rendering in Allure Report</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/allure-report-templates" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <h3 id="tools" class="section-title">System</h3>
-    <section class="section grid">
-      <div class="card">
-        <h2><img src="icons/edge_logo.png" alt="Edge logo" class="icon-card">Disable Microsoft Edge Updates</h2>
-        <div class="meta">
-          <span class="tag">Windows</span>
-          <span class="tag">PowerShell</span>
-          <span class="tag">Scripts</span>
-        </div>
-        <p>Scripts for Windows to disable and remove Microsoft Edge auto-updates</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/disable-edge-update" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-        </div>
-      </div>
-	  
-      <div class="card">
-        <h2><img src="icons/asus_crate_logo.png" alt="ASUS Armoury Crate logo" class="icon-card">Remove ASUS Bloatware</h2>
-        <div class="meta">
-          <span class="tag">Windows</span>
-          <span class="tag">PowerShell</span>
-          <span class="tag">Scripts</span>
-        </div>
-        <p>Script for Windows to remove ASUS bloatware and leftovers</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/remove-asus-bloatware" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
         </div>
       </div>
     </section>
