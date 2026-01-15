@@ -8,11 +8,22 @@ vikindor.github.io
 
 </div>
 
-Personal website and portfolio. Built with **pure HTML and CSS**, featuring a clean dark theme and responsive grid layout.
+Source code of my personal website and portfolio, hosted on GitHub Pages.
 
-## 🌐 Link
+The site is intentionally kept simple — no JavaScript, no frameworks, no tracking.
+Just static HTML and CSS.
 
-**[vikindor.github.io](https://vikindor.github.io/)**
+## 🌐 Live
+
+**https://vikindor.github.io/**
+
+## ✨ Features
+
+- Static GitHub Pages website
+- English / Russian versions
+- Pure HTML & CSS
+- Responsive layout
+- No JavaScript, no analytics, no tracking
 
 ## 🛠️ Tech stack
 
