@@ -21,7 +21,7 @@
         --glow-btn:0 1px 4px rgba(80,120,255,.12), 0 2px 6px rgba(100,140,255,.18);
         --radius:18px;
       }
-    
+
       /* =====================
          Base
          ===================== */
@@ -36,15 +36,15 @@
           repeating-linear-gradient(180deg, #0a0d14 0, #0c101f 600px, #0a0d14 1200px);
         background-attachment: fixed;
       }
-    
+
       a{ color:var(--acc); text-decoration:none }
-    
+
       .wrap{
         max-width:1000px;
         margin:0 auto;
         padding:40px 20px 72px;
       }
-    
+
       /* =====================
          Header
          ===================== */
@@ -55,13 +55,13 @@
         gap:22px;
         margin-bottom:28px;
       }
-    
+
       .header-left{
         display:flex;
         align-items:center;
         gap:22px;
       }
-    
+
       .avatar{
         width:92px;
         height:92px;
@@ -70,7 +70,7 @@
         border:2px solid var(--acc);
         box-shadow:var(--glow-card);
       }
-    
+
       .avatar img{
         width:100%;
         height:100%;
@@ -78,38 +78,38 @@
         display:block;
         border-radius:50%;
       }
-    
+
       .title{
         display:flex;
         align-items:center;
         gap:12px;
         margin:0;
       }
-    
+
       .title span{
         opacity:.8;
         font-weight:600;
         letter-spacing:.2px;
       }
-    
+
       h1{
         font-size:30px;
         line-height:1.2;
         margin:0;
       }
-    
+
       .sub{
         color:var(--muted);
         margin-top:2px;
       }
-    
+
       .badges{
         display:flex;
         flex-wrap:wrap;
         gap:10px;
         margin-top:14px;
       }
-    
+
       .badge{
         display:inline-flex;
         align-items:center;
@@ -120,25 +120,25 @@
         border:1px solid var(--stroke);
         box-shadow:var(--glow-card);
       }
-    
+
       .badge:hover{ background:#1a2238 }
-    
+
       .lang-switch{
         font-size:14px;
         color:var(--muted);
         opacity:.8;
         white-space:nowrap;
       }
-    
+
       .lang-switch a{ color:var(--acc) }
-    
+
       .lang-switch .lang-current{
         color:var(--ink);
         font-weight:600;
       }
-    
+
       .lang-switch .lang-sep{ margin:0 6px }
-    
+
       /* =====================
          Sections & cards
          ===================== */
@@ -149,15 +149,15 @@
         text-transform:uppercase;
         color:var(--muted);
       }
-    
+
       .section{ margin-bottom:8px }
-    
+
       .grid{
         display:grid;
         grid-template-columns:repeat(2, minmax(0, 1fr));
         gap:18px;
       }
-    
+
       .card{
         background:var(--card);
         backdrop-filter:blur(6px);
@@ -168,17 +168,17 @@
         flex-direction:column;
         box-shadow:var(--glow-card);
       }
-    
+
       .card h2{
         font-size:18px;
         margin:0 0 10px;
       }
-    
+
       .card p{
         margin:0 0 16px;
         color:var(--ink);
       }
-    
+
       .meta{
         display:flex;
         gap:8px;
@@ -187,7 +187,18 @@
         font-size:13px;
         margin-bottom:10px;
       }
-    
+	  
+      .meta .installs {
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        color: var(--muted);
+        white-space: nowrap;
+        opacity: 0.9;
+      }
+
       .tag{
         padding:3px 10px;
         border-radius:999px;
@@ -240,7 +251,13 @@
         height:18px;
         vertical-align:sub;
       }
-    
+      
+	  .icon-installs{
+        width:15px;
+        height:15px;
+        vertical-align:sub;
+      }
+
       .icon-card{
         width:22px;
         height:22px;
@@ -462,8 +479,11 @@
     </section>
 
     <h3 id="browser-scripts" class="section-title">Browser Scripts</h3>
-    <section class="section grid">	
-      <div class="card">
+    <section class="section grid">
+      <div class="card"
+	       data-installs
+           data-greasyfork-json="https://greasyfork.org/en/scripts/553502.json"
+           data-openuserjs-json="https://openuserjs.org/meta/Vikindor/GitHub_-_Enhanced_Shortcuts_Header_Toolbar.meta.json">
         <h2><img src="icons/github_logo.png" alt="GitHub logo" class="icon-card">GitHub - Enhanced Shortcuts & Header Toolbar</h2>
         <div class="meta">
           <span class="tag">Browser</span>
@@ -478,7 +498,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card"
+	       data-installs
+           data-greasyfork-json="https://greasyfork.org/en/scripts/553862.json"
+           data-openuserjs-json="https://openuserjs.org/meta/Vikindor/Twitch_-_Keep_Tab_Active.meta.json">
         <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Keep Tab Active</h2>
         <div class="meta">
           <span class="tag">Browser</span>
@@ -493,7 +516,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card"
+	       data-installs
+           data-greasyfork-json="https://greasyfork.org/en/scripts/552795.json"
+           data-openuserjs-json="https://openuserjs.org/meta/Vikindor/Twitch_-_Show_Stream_Language.meta.json">
         <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Show Stream Language</h2>
         <div class="meta">
           <span class="tag">Browser</span>
@@ -508,7 +534,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card"
+	       data-installs
+           data-greasyfork-json="https://greasyfork.org/en/scripts/549727.json"
+           data-openuserjs-json="https://openuserjs.org/meta/Vikindor/Twitch_-_Force_sort_Viewers_High_to_Low.meta.json">
         <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Force sort Viewers High to Low</h2>
         <div class="meta">
           <span class="tag">Browser</span>
@@ -523,7 +552,10 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card"
+	       data-installs
+           data-greasyfork-json="https://greasyfork.org/en/scripts/544729.json"
+           data-openuserjs-json="https://openuserjs.org/meta/Vikindor/Rutube_-_Block_Autoplay.meta.json">
         <h2><img src="icons/rutube_logo.png" alt="Rutube logo" class="icon-card">Rutube - Block Autoplay</h2>
         <div class="meta">
           <span class="tag">Browser</span>
@@ -538,6 +570,68 @@
         </div>
       </div>
     </section>
+
+    <script>
+    (async () => {
+      const cards = document.querySelectorAll('.card[data-installs]');
+    
+      const fetchJson = async (url) => {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      };
+    
+      const getGreasyForkInstalls = async (url) => {
+        const json = await fetchJson(url);
+        return Number(json.total_installs);
+      };
+    
+      const getOpenUserJSInstalls = async (url) => {
+        const json = await fetchJson(url);
+        return Number(json.OpenUserJS?.installs?.[0]?.value);
+      };
+    
+      for (const card of cards) {
+        const sources = [];
+    
+        const gfUrl = card.dataset.greasyforkJson;
+        const oujsUrl = card.dataset.openuserjsJson;
+    
+        if (gfUrl) {
+          sources.push(
+            getGreasyForkInstalls(gfUrl).catch(() => null)
+          );
+        }
+    
+        if (oujsUrl) {
+          sources.push(
+            getOpenUserJSInstalls(oujsUrl).catch(() => null)
+          );
+        }
+    
+        if (!sources.length) continue;
+    
+        const results = await Promise.allSettled(sources);
+    
+        const total = results
+          .filter(r => r.status === 'fulfilled' && Number.isFinite(r.value))
+          .reduce((sum, r) => sum + r.value, 0);
+    
+        if (!total) continue;
+    
+        const installsEl = document.createElement('div');
+        installsEl.className = 'installs';
+        installsEl.title = 'Total installs (GreasyFork + OpenUserJS)';
+		
+        installsEl.innerHTML = `
+          <img src="icons/install_icon.png" class="icon-installs">
+          <span>Installs: ${total.toLocaleString()}</span>
+        `;
+
+        card.querySelector('.meta')?.appendChild(installsEl);
+      }
+    })();
+    </script>
 
 </body>
 </html>
