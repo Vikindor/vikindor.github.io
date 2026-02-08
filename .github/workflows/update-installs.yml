@@ -30,11 +30,36 @@ jobs:
 
           while IFS='|' read -r ID GF_URL OUJS_URL; do
             [ -z "$ID" ] && continue
-
-            GF=$(curl -s "$GF_URL" | jq '.total_installs // 0')
-            OUJS=$(curl -s "$OUJS_URL" | jq '.OpenUserJS.installs[0].value // 0')
+          
+            echo "=============================="
+            echo "ID: $ID"
+            echo "GF_URL: $GF_URL"
+            echo "OUJS_URL: $OUJS_URL"
+          
+            GF_RAW=$(curl -s "$GF_URL")
+            OUJS_RAW=$(curl -s "$OUJS_URL")
+          
+            echo "--- GF RAW (first 300 chars) ---"
+            echo "${GF_RAW:0:300}"
+            echo
+          
+            echo "--- OUJS RAW (first 300 chars) ---"
+            echo "${OUJS_RAW:0:300}"
+            echo
+          
+            GF=$(echo "$GF_RAW" | jq -r '.total_installs // empty' 2>/dev/null)
+            OUJS=$(echo "$OUJS_RAW" | jq -r '.OpenUserJS.installs[0].value // empty' 2>/dev/null)
+          
+            echo "Parsed GF: '$GF'"
+            echo "Parsed OUJS: '$OUJS'"
+          
+            [[ "$GF" =~ ^[0-9]+$ ]] || GF=0
+            [[ "$OUJS" =~ ^[0-9]+$ ]] || OUJS=0
+          
             TOTAL=$((GF + OUJS))
-
+          
+            echo "Normalized → GF=$GF OUJS=$OUJS TOTAL=$TOTAL"
+          
             jq --arg id "$ID" \
                --argjson gf "$GF" \
                --argjson oujs "$OUJS" \
