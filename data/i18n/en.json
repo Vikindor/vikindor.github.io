@@ -36,8 +36,11 @@
   },
 
   "sideProjects": {
-    "intro": "• Built for everyday use<br>• Some projects are just experiments<br>• No ads, no analytics, no tracking"
-  },
+    "intro": [
+      "• Built for everyday use",
+      "• Some projects are just experiments",
+      "• No ads, no analytics, no tracking"
+    ],
 
   "projects": {
     "allureTemplates": {
@@ -90,4 +93,4 @@
     "marketplace": "Marketplace",
     "webPage": "Web page"
   }
-}
+},
