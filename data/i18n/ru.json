@@ -1,0 +1,86 @@
+{
+  "header": {
+    "role": "Automation QA",
+    "stack": "Java • Selenide • Appium • Web • API • Mobile",
+    "links": {
+      "github": "GitHub",
+      "mail": "Почта",
+      "telegram": "Telegram"
+    }
+  },
+  "sections": {
+    "about": "ОБО МНЕ",
+    "portfolio": "ПОРТФОЛИО",
+    "sideProjects": "САЙД-ПРОЕКТЫ",
+    "devTools": "Инструменты для разработки",
+    "apps": "Приложения",
+    "system": "Система",
+    "browserScripts": "Скрипты для браузера"
+  },
+  "about": {
+    "text": "QA-инженер с опытом ручного и автоматизированного тестирования веб- и мобильных приложений. Автоматизация на Java: UI-, API-, Mobile-автотесты (JUnit 5, Selenide, Appium, REST Assured), работа с Allure, CI и Git."
+  },
+  "portfolio": {
+    "todoist": {
+      "title": "Фреймворк многоуровневой автоматизации тестирования сервиса Todoist",
+      "description": "Фреймворк автотестирования, который проверяет один продукт сразу на нескольких уровнях: API, Web UI и Android. Собран как многомодульный Gradle-проект с общими отчётами, CI-интеграцией и независимым от окружения запуском."
+    }
+  },
+  "sideProjects": {
+    "intro": [
+      "• Сделано ради решения повседневных задач",
+      "• Часть проектов — ради экспериментов",
+      "• Без рекламы, трекеров и аналитики"
+    ]
+  },
+  "projects": {
+    "allureTemplates": {
+      "title": "Allure Report - HTTP Templates",
+      "description": "Пользовательские FreeMarker шаблоны для исправления отображения запросов и ответов в Allure Report"
+    },
+    "selenoid": {
+      "title": "Selenoid via Aerokube CM",
+      "description": "Запуск локального Selenoid на GitHub-hosted раннерах с использованием Aerokube CM (composite action)"
+    },
+    "peaktodayWeb": {
+      "title": "Peak Today (Web)",
+      "description": "Таймер ротации карт для игры Peak, работающий прямо в браузере"
+    },
+    "peaktodayAndroid": {
+      "title": "Peak Today (Android)",
+      "description": "Минималистичный Android-таймер ротации карт для игры Peak"
+    },
+    "edge": {
+      "title": "Disable Microsoft Edge Updates",
+      "description": "Скрипт для Windows, отключающий и удаляющий автоматические обновления Microsoft Edge"
+    },
+    "asus": {
+      "title": "Remove ASUS Bloatware",
+      "description": "Скрипт для Windows, который удаляет навязанный ASUS софт и оставшиеся после него хвосты"
+    },
+    "githubShortcuts": {
+      "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
+      "description": "Скрипт, который расширяет навигацию на GitHub: добавляет настраиваемую панель в шапке и единые горячие клавиши"
+    },
+    "twitchKeepActive": {
+      "title": "Twitch - Keep Tab Active",
+      "description": "Скрипт, который не даёт Twitch автоматически ставить стрим на паузу при неактивной вкладке и возобновляет воспроизведение после сбоев"
+    },
+    "twitchLanguage": {
+      "title": "Twitch - Show Stream Language",
+      "description": "Скрипт, который показывает язык стрима в виде тегов вроде [EN], [JA] и т.п."
+    },
+    "twitchSort": {
+      "title": "Twitch - Force sort Viewers High to Low",
+      "description": "Скрипт, который автоматически сортирует каналы по количеству зрителей по убыванию"
+    },
+    "rutube": {
+      "title": "Rutube - Block Autoplay",
+      "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах"
+    }
+  },
+  "common": {
+    "marketplace": "Маркетплейс",
+    "webPage": "Сайт"
+  }
+}
