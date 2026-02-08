@@ -1,0 +1,63 @@
+{
+  "allure-report-templates": {
+    "stars": 1
+  },
+  "disable-edge-updates": {
+    "stars": 4
+  },
+  "github-header-shortcuts": {
+    "stars": 0,
+    "installs": {
+      "greasyfork": 2,
+      "openuserjs": 12,
+      "total": 14
+    }
+  },
+  "peaktoday": {
+    "stars": 0
+  },
+  "peaktoday-android": {
+    "stars": 1
+  },
+  "remove-asus-bloatware": {
+    "stars": 1
+  },
+  "rutube-block-autoplay": {
+    "stars": 0,
+    "installs": {
+      "greasyfork": 31,
+      "openuserjs": 32,
+      "total": 63
+    }
+  },
+  "selenoid-github-action": {
+    "stars": 0
+  },
+  "todoist-test-automation": {
+    "stars": 0
+  },
+  "twitch-force-sort-viewers": {
+    "stars": 0,
+    "installs": {
+      "greasyfork": 5,
+      "openuserjs": 15,
+      "total": 20
+    }
+  },
+  "twitch-keep-tab-active": {
+    "stars": 1,
+    "installs": {
+      "greasyfork": 107,
+      "openuserjs": 70,
+      "total": 177
+    }
+  },
+  "twitch-show-stream-language": {
+    "stars": 0,
+    "installs": {
+      "greasyfork": 3,
+      "openuserjs": 8,
+      "total": 11
+    }
+  }
+}
