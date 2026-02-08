@@ -39,6 +39,7 @@ index.html          # Single-page site
 css/                # Stylesheets
 data/
   i18n/              # Localization files (en / ru)
+  projects.json      # Projects links
   metrics.json       # GitHub stars & installs data
 icons/               # UI icons
 images/              # Images and assets
