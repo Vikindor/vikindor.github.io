@@ -21,11 +21,11 @@ jobs:
           echo '{}' > data/installs.json
 
           SCRIPTS='
-          github-header-shortcuts|https://greasyfork.org/en/scripts/553502.json|https://openuserjs.org/meta/Vikindor/GitHub_-_Enhanced_Shortcuts_Header_Toolbar.meta.json
-          twitch-keep-tab-active|https://greasyfork.org/en/scripts/553862.json|https://openuserjs.org/meta/Vikindor/Twitch_-_Keep_Tab_Active.meta.json
-          twitch-show-stream-language|https://greasyfork.org/en/scripts/552795.json|https://openuserjs.org/meta/Vikindor/Twitch_-_Show_Stream_Language.meta.json
-          twitch-force-sort-viewers|https://greasyfork.org/en/scripts/549727.json|https://openuserjs.org/meta/Vikindor/Twitch_-_Force_sort_Viewers_High_to_Low.meta.json
-          rutube-block-autoplay|https://greasyfork.org/en/scripts/544729.json|https://openuserjs.org/meta/Vikindor/Rutube_-_Block_Autoplay.meta.json
+          github-header-shortcuts|https://api.greasyfork.org/en/scripts/553502.json|https://openuserjs.org/meta/Vikindor/GitHub_-_Enhanced_Shortcuts_Header_Toolbar.meta.json
+          twitch-keep-tab-active|https://api.greasyfork.org/en/scripts/553862.json|https://openuserjs.org/meta/Vikindor/Twitch_-_Keep_Tab_Active.meta.json
+          twitch-show-stream-language|https://api.greasyfork.org/en/scripts/552795.json|https://openuserjs.org/meta/Vikindor/Twitch_-_Show_Stream_Language.meta.json
+          twitch-force-sort-viewers|https://api.greasyfork.org/en/scripts/549727.json|https://openuserjs.org/meta/Vikindor/Twitch_-_Force_sort_Viewers_High_to_Low.meta.json
+          rutube-block-autoplay|https://api.greasyfork.org/en/scripts/544729.json|https://openuserjs.org/meta/Vikindor/Rutube_-_Block_Autoplay.meta.json
           '
 
           while IFS='|' read -r ID GF_URL OUJS_URL; do
