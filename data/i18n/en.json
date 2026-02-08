@@ -1,9 +1,4 @@
 {
-  "lang": {
-    "en": "EN",
-    "ru": "RU"
-  },
-
   "header": {
     "role": "Automation QA",
     "stack": "Java • Selenide • Appium • Web • API • Mobile",
@@ -13,7 +8,6 @@
       "telegram": "Telegram"
     }
   },
-
   "sections": {
     "about": "ABOUT",
     "portfolio": "PORTFOLIO",
@@ -23,26 +17,22 @@
     "system": "System",
     "browserScripts": "Browser Scripts"
   },
-
   "about": {
     "text": "QA engineer with experience in manual and automated testing of web and mobile applications. Automation in Java: UI, API, and mobile tests using JUnit 5, Selenide, Appium, and REST Assured. Familiar with Allure, CI pipelines, and Git."
   },
-
   "portfolio": {
     "todoist": {
       "title": "Multi-Layer Test Automation Framework for Todoist app",
       "description": "Enterprise-grade multi-layer test automation framework covering the same product across API, Web UI, and Android platforms. Designed as a multi-module Gradle project with unified reporting, CI integration, and environment-agnostic execution model."
     }
   },
-
   "sideProjects": {
     "intro": [
       "• Built for everyday use",
       "• Some projects are just experiments",
-      "• No ads, no analytics, no tracking"
+      "• No ads, no tracking, no analytics"
     ]
   },
-
   "projects": {
     "allureTemplates": {
       "title": "Allure Report - HTTP Templates",
@@ -74,7 +64,7 @@
     },
     "twitchKeepActive": {
       "title": "Twitch - Keep Tab Active",
-      "description": "Userscript that prevents Twitch from auto-pausing when the tab is inactive"
+      "description": "Userscript that prevents Twitch from auto-pausing when the tab is inactive and resumes playback after interruptions"
     },
     "twitchLanguage": {
       "title": "Twitch - Show Stream Language",
@@ -89,7 +79,6 @@
       "description": "Userscript that blocks video autoplay on Rutube and embeds"
     }
   },
-
   "common": {
     "marketplace": "Marketplace",
     "webPage": "Web page"
