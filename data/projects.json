@@ -14,8 +14,8 @@
   "peaktoday-android": {
     "github": "Vikindor/peaktoday-android"
   },
-  "disable-edge-update": {
-    "github": "Vikindor/disable-edge-update"
+  "disable-edge-updates": {
+    "github": "Vikindor/disable-edge-updates"
   },
   "remove-asus-bloatware": {
     "github": "Vikindor/remove-asus-bloatware"
