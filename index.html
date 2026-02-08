@@ -344,9 +344,9 @@
         </div>
 
         <div class="lang-switch">
-            <span class="lang-current" data-i18n="lang.en"></span>
+            <a href="#" data-lang="en" class="lang-current">EN</a>
             <span class="lang-sep">|</span>
-            <a href="#" data-lang="ru" data-i18n="lang.ru"></a>
+            <a href="#" data-lang="ru">RU</a>
         </div>
     </header>
 
@@ -384,7 +384,8 @@
             <p data-i18n="portfolio.todoist.description"></p>
 
             <div class="actions">
-                <a class="btn" href="https://github.com/Vikindor/todoist-test-automation" target="_blank" rel="noopener">
+                <a class="btn" href="https://github.com/Vikindor/todoist-test-automation" target="_blank"
+                   rel="noopener">
                     <img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">
                     GitHub
                 </a>
@@ -398,7 +399,11 @@
 
     <section class="about">
         <div class="card">
-            <p data-i18n="sideProjects.intro"></p>
+            <p>
+                <span data-i18n="sideProjects.intro.0"></span><br>
+                <span data-i18n="sideProjects.intro.1"></span><br>
+                <span data-i18n="sideProjects.intro.2"></span>
+            </p>
         </div>
     </section>
 
@@ -417,7 +422,8 @@
             </div>
             <p data-i18n="projects.allureTemplates.description"></p>
             <div class="actions">
-                <a class="btn" href="https://github.com/Vikindor/allure-report-templates" target="_blank" rel="noopener">
+                <a class="btn" href="https://github.com/Vikindor/allure-report-templates" target="_blank"
+                   rel="noopener">
                     <img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">
                     GitHub
                 </a>
@@ -440,7 +446,8 @@
                     <img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">
                     GitHub
                 </a>
-                <a class="btn" href="https://github.com/marketplace/actions/selenoid-via-cm" target="_blank" rel="noopener">
+                <a class="btn" href="https://github.com/marketplace/actions/selenoid-via-cm" target="_blank"
+                   rel="noopener">
                     <img src="icons/marketplace_icon.png" alt="GitHub Marketplace icon" class="icon-badge">
                     <span data-i18n="common.marketplace"></span>
                 </a>
@@ -551,7 +558,8 @@
             </div>
             <p data-i18n="projects.githubShortcuts.description"></p>
             <div class="actions">
-                <a class="btn" href="https://github.com/Vikindor/github-header-shortcuts" target="_blank" rel="noopener">
+                <a class="btn" href="https://github.com/Vikindor/github-header-shortcuts" target="_blank"
+                   rel="noopener">
                     <img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">
                     GitHub
                 </a>
@@ -687,6 +695,44 @@
         </div>
     </section>
 </div>
+
+<script>
+    (function () {
+      const LANG_KEY = "lang";
+
+      function getByPath(obj, path) {
+        return path.split(".").reduce((acc, key) => acc[key], obj);
+      }
+
+      async function loadLang(lang) {
+        const res = await fetch(`/data/i18n/${lang}.json`);
+        const dict = await res.json();
+
+        document.documentElement.lang = lang;
+
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          el.textContent = getByPath(dict, el.dataset.i18n);
+        });
+
+        document.querySelectorAll("[data-lang]").forEach(el => {
+          el.classList.toggle("lang-current", el.dataset.lang === lang);
+        });
+
+        localStorage.setItem(LANG_KEY, lang);
+      }
+
+      const initialLang = localStorage.getItem(LANG_KEY) || "en";
+      loadLang(initialLang);
+
+      document.addEventListener("click", e => {
+        const btn = e.target.closest("[data-lang]");
+        if (!btn) return;
+
+        e.preventDefault();
+        loadLang(btn.dataset.lang);
+      });
+    })();
+</script>
 
 <script>
     (async () => {
