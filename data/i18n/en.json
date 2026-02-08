@@ -40,7 +40,8 @@
       "• Built for everyday use",
       "• Some projects are just experiments",
       "• No ads, no analytics, no tracking"
-    ],
+    ]
+  },
 
   "projects": {
     "allureTemplates": {
@@ -93,4 +94,4 @@
     "marketplace": "Marketplace",
     "webPage": "Web page"
   }
-},
+}
