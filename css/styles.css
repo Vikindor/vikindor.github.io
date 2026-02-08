@@ -28,7 +28,7 @@ a{ color:var(--acc); text-decoration:none }
 .wrap{
   max-width:1000px;
   margin:0 auto;
-  padding:40px 20px 72px;
+  padding:40px 20px 28px;
 }
 
 .header{
@@ -270,7 +270,7 @@ code{
 }
 
 .footer{
-  margin:20px 0;
+  margin:16px 0 24px;
   color:var(--muted);
   font-size:14px;
   text-align:center;
