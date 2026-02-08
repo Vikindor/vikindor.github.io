@@ -25,13 +25,12 @@ jobs:
           mkdir -p data
           echo '{}' > "$OUTPUT_FILE"
 
-          PROJECT_IDS=$(jq -r 'keys[]' "$PROJECTS_FILE")
-
-          for ID in $PROJECT_IDS; do
+          for ID in $(jq -r 'keys[]' "$PROJECTS_FILE"); do
             GH_REPO=$(jq -r ".\"$ID\".github // empty" "$PROJECTS_FILE")
             GF_URL=$(jq -r ".\"$ID\".greasyfork // empty" "$PROJECTS_FILE")
             OUJS_URL=$(jq -r ".\"$ID\".openuserjs // empty" "$PROJECTS_FILE")
 
+            # -------- GitHub stars --------
             STARS=0
             if [ -n "$GH_REPO" ]; then
               STARS=$(curl -s \
@@ -43,38 +42,55 @@ jobs:
               [[ "$STARS" =~ ^[0-9]+$ ]] || STARS=0
             fi
 
+            # -------- Installs --------
+            HAS_INSTALLS=false
             GF=0
             OUJS=0
 
             if [ -n "$GF_URL" ]; then
+              HAS_INSTALLS=true
               GF=$(curl -s "$GF_URL" | jq -r '.total_installs // 0' 2>/dev/null)
               [[ "$GF" =~ ^[0-9]+$ ]] || GF=0
             fi
 
             if [ -n "$OUJS_URL" ]; then
+              HAS_INSTALLS=true
               OUJS=$(curl -s "$OUJS_URL" | jq -r '.OpenUserJS.installs[0].value // 0' 2>/dev/null)
               [[ "$OUJS" =~ ^[0-9]+$ ]] || OUJS=0
             fi
 
             INSTALLS_TOTAL=$((GF + OUJS))
 
-            jq --arg id "$ID" \
-               --argjson stars "$STARS" \
-               --argjson gf "$GF" \
-               --argjson oujs "$OUJS" \
-               --argjson total "$INSTALLS_TOTAL" \
-               '
-               . + {
-                 ($id): {
-                   stars: $stars,
-                   installs: {
-                     greasyfork: $gf,
-                     openuserjs: $oujs,
-                     total: $total
+            # -------- Write metrics --------
+            if [ "$HAS_INSTALLS" = true ]; then
+              jq --arg id "$ID" \
+                 --argjson stars "$STARS" \
+                 --argjson gf "$GF" \
+                 --argjson oujs "$OUJS" \
+                 --argjson total "$INSTALLS_TOTAL" \
+                 '
+                 . + {
+                   ($id): {
+                     stars: $stars,
+                     installs: {
+                       greasyfork: $gf,
+                       openuserjs: $oujs,
+                       total: $total
+                     }
                    }
                  }
-               }
-               ' "$OUTPUT_FILE" > tmp.json && mv tmp.json "$OUTPUT_FILE"
+                 ' "$OUTPUT_FILE" > tmp.json && mv tmp.json "$OUTPUT_FILE"
+            else
+              jq --arg id "$ID" \
+                 --argjson stars "$STARS" \
+                 '
+                 . + {
+                   ($id): {
+                     stars: $stars
+                   }
+                 }
+                 ' "$OUTPUT_FILE" > tmp.json && mv tmp.json "$OUTPUT_FILE"
+            fi
           done
 
       - name: Commit metrics
