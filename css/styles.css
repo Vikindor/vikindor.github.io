@@ -269,8 +269,8 @@ code{
   box-shadow:0 0 14px rgba(120,180,255,0.6);
 }
 
-footer{
-  margin-top:40px;
+.footer{
+  margin:20px 0;
   color:var(--muted);
   font-size:14px;
   text-align:center;
