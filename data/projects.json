@@ -1,0 +1,48 @@
+{
+  "todoist-test-automation": {
+    "github": "Vikindor/todoist-test-automation"
+  },
+  "allure-report-templates": {
+    "github": "Vikindor/allure-report-templates"
+  },
+  "selenoid-github-action": {
+    "github": "Vikindor/selenoid-github-action"
+  },
+  "peaktoday": {
+    "github": "Vikindor/peaktoday"
+  },
+  "peaktoday-android": {
+    "github": "Vikindor/peaktoday-android"
+  },
+  "disable-edge-update": {
+    "github": "Vikindor/disable-edge-update"
+  },
+  "remove-asus-bloatware": {
+    "github": "Vikindor/remove-asus-bloatware"
+  },
+  "github-header-shortcuts": {
+    "github": "Vikindor/github-header-shortcuts",
+    "greasyfork": "https://api.greasyfork.org/scripts/553502.json",
+    "openuserjs": "https://openuserjs.org/meta/Vikindor/GitHub_-_Enhanced_Shortcuts_Header_Toolbar.meta.json"
+  },
+  "twitch-keep-tab-active": {
+    "github": "Vikindor/twitch-keep-tab-active",
+    "greasyfork": "https://api.greasyfork.org/scripts/553862.json",
+    "openuserjs": "https://openuserjs.org/meta/Vikindor/Twitch_-_Keep_Tab_Active.meta.json"
+  },
+  "twitch-show-stream-language": {
+    "github": "Vikindor/twitch-show-stream-language",
+    "greasyfork": "https://api.greasyfork.org/en/scripts/552795.json",
+    "openuserjs": "https://openuserjs.org/meta/Vikindor/Twitch_-_Show_Stream_Language.meta.json"
+  },
+  "twitch-force-sort-viewers": {
+    "github": "Vikindor/twitch-force-sort-viewers",
+    "greasyfork": "https://api.greasyfork.org/en/scripts/549727.json",
+    "openuserjs": "https://openuserjs.org/meta/Vikindor/Twitch_-_Force_sort_Viewers_High_to_Low.meta.json"
+  },
+  "rutube-block-autoplay": {
+    "github": "Vikindor/rutube-block-autoplay",
+    "greasyfork": "https://api.greasyfork.org/en/scripts/544729.json",
+    "openuserjs": "https://openuserjs.org/meta/Vikindor/Rutube_-_Block_Autoplay.meta.json"
+  }
+}
