@@ -187,15 +187,22 @@
         font-size:13px;
         margin-bottom:10px;
       }
-	  
-      .meta .installs {
+
+      .meta .meta-metrics {
         margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        white-space: nowrap;
+      }
+
+      .meta .stars,
+      .meta .installs {
         display: inline-flex;
         align-items: center;
         gap: 6px;
         font-size: 13px;
         color: var(--muted);
-        white-space: nowrap;
         opacity: 0.9;
       }
 
@@ -304,269 +311,272 @@
         h1{ font-size:26px }
       }
     </style>
-</head>
+  </head>
 
-<body>
-  <div class="wrap">
-    <header class="header">
-      <div class="header-left">
-        <div class="avatar">
-          <img src="images/avatar.jpg" alt="Avatar">
-        </div>
-        <div>
-          <div class="title">
-            <h1>Vikindor</h1>
-            <span>Automation QA</span>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="header-left">
+          <div class="avatar">
+            <img src="images/avatar.jpg" alt="Avatar">
           </div>
-          <div class="sub">Java • Selenide • Appium • Web • API • Mobile</div>
-          <div class="badges">
-            <a class="badge" href="https://github.com/Vikindor" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-            <a class="badge" href="mailto:vikindor@proton.me"><img src="icons/mail_icon.png" alt="Mail icon" class="icon-badge">Mail</a>
-            <a class="badge" href="https://t.me/vikindor" target="_blank" rel="noopener"><img src="icons/telegram_logo.png" alt="Telegram logo" class="icon-badge">Telegram</a>
+          <div>
+            <div class="title">
+              <h1>Vikindor</h1>
+              <span>Automation QA</span>
+            </div>
+            <div class="sub">Java • Selenide • Appium • Web • API • Mobile</div>
+            <div class="badges">
+              <a class="badge" href="https://github.com/Vikindor" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+              <a class="badge" href="mailto:vikindor@proton.me"><img src="icons/mail_icon.png" alt="Mail icon" class="icon-badge">Mail</a>
+              <a class="badge" href="https://t.me/vikindor" target="_blank" rel="noopener"><img src="icons/telegram_logo.png" alt="Telegram logo" class="icon-badge">Telegram</a>
+            </div>
           </div>
         </div>
-      </div>
+      
+        <div class="lang-switch">
+          <span class="lang-current">EN</span>
+          <span class="lang-sep">|</span>
+          <a href="ru.html">RU</a>
+        </div>
+      </header>
+  
+      <h2 class="section-title">ABOUT</h2>
+      <section class="about">
+        <div class="card">
+          <p>QA engineer with experience in manual and automated testing of web and mobile applications. Automation in Java: UI, API, and mobile tests using JUnit 5, Selenide, Appium, and REST Assured. Familiar with Allure, CI pipelines, and Git.</p>
+        </div>
+      </section>
+  	
+      <div class="section-divider"></div>
+      
+      <h2 class="section-title">PORTFOLIO</h2>
+  	
+      <section class="section grid">
+        <div class="card card--featured" data-stars>
+          <h2><img src="icons/todoist_logo.png" alt="Todoist logo" class="icon-card">Multi-Layer Test Automation Framework for Todoist app</h2>
+  
+          <div class="meta">
+            <span class="tag">QA Automation</span>
+            <span class="tag">API</span>
+            <span class="tag">Web UI</span>
+            <span class="tag">Android</span>
+            <span class="tag">REST Assured</span>
+            <span class="tag">Java</span>
+            <span class="tag">Selenide</span>
+            <span class="tag">Appium</span>
+            <span class="tag">JUnit 5</span>
+            <span class="tag">Allure</span>
+          </div>
+  
+          <p>
+            Enterprise-grade multi-layer test automation framework
+            covering the same product across API, Web UI, and Android
+            platforms. Designed as a multi-module Gradle project with
+            unified reporting, CI integration, and environment-agnostic
+            execution model.
+          </p>
+  
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/todoist-test-automation" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          </div>
+        </div>
+      </section>
+      
+      <div class="section-divider"></div>
+      
+      <h2 class="section-title">SIDE PROJECTS</h2>
+  	
+      <section class="about">
+        <div class="card">
+          <p>
+            • Built for everyday use<br>
+            • Some projects are just experiments<br>
+            • No ads, no analytics, no tracking
+          </p>
+        </div>
+      </section>
+  
+      <h3 id="tools" class="section-title">Dev Tools</h3>
+  	
+      <section class="section grid">
+        <div class="card" data-stars>
+          <h2><img src="icons/allure_report_logo.png" alt="Allure Report logo" class="icon-card">Allure Report - HTTP Templates</h2>
+          <div class="meta">
+            <span class="tag">Allure</span>
+            <span class="tag">REST Assured</span>
+            <span class="tag">Templates</span>
+          </div>
+          <p>Custom FreeMarker templates for improved Request/Response rendering in Allure Report</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/allure-report-templates" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          </div>
+        </div>
+  	
+        <div class="card" data-stars>
+          <h2><img src="icons/selenoid_logo.png" alt="Selenoid logo" class="icon-card">Selenoid via Aerokube CM</h2>
+          <div class="meta">
+            <span class="tag">DevOps</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Composite Action</span>
+          </div>
+          <p>Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/selenoid-github-action" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+            <a class="btn" href="https://github.com/marketplace/actions/selenoid-via-cm" target="_blank" rel="noopener"><img src="icons/marketplace_icon.png" alt="GitHub Marketplace icon" class="icon-badge">Marketplace</a>
+          </div>
+        </div>
+      </section>
+  
+      <h3 id="apps" class="section-title">Apps</h3>
+  	
+      <section class="section grid">
+        <div class="card" data-stars>
+          <h2><img src="icons/peaktoday_logo.png" alt="Peak Today web logo" class="icon-card">Peak Today (Web)</h2>
+          <div class="meta">
+            <span class="tag">Web</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Open Source</span>
+          </div>
+          <p>Browser-based map rotation timer for Peak game</p>
+          <div class="actions">
+            <a class="btn" href="https://vikindor.github.io/peaktoday/" target="_blank" rel="noopener"><img src="icons/web_icon.png" alt="Web icon" class="icon-badge">Web page</a>
+            <a class="btn" href="https://github.com/Vikindor/peaktoday" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          </div>
+        </div>	
+  
+        <div class="card" data-stars>
+          <h2><img src="icons/peaktoday_logo.png" alt="Peak Today app logo" class="icon-card">Peak Today (Android)</h2>
+          <div class="meta">
+            <span class="tag">Android</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Open Source</span>
+          </div>
+          <p>Minimalist Android map rotation timer for Peak game</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/peaktoday-android" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          </div>
+        </div>
+      </section>
+  
+      <h3 id="tools" class="section-title">System</h3>
+  	
+      <section class="section grid">
+        <div class="card" data-stars>
+          <h2><img src="icons/edge_logo.png" alt="Edge logo" class="icon-card">Disable Microsoft Edge Updates</h2>
+          <div class="meta">
+            <span class="tag">Windows</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">Scripts</span>
+          </div>
+          <p>Script for Windows to disable and remove Microsoft Edge auto-updates</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/disable-edge-update" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          </div>
+        </div>
+  	  
+        <div class="card" data-stars>
+          <h2><img src="icons/asus_crate_logo.png" alt="ASUS Armoury Crate logo" class="icon-card">Remove ASUS Bloatware</h2>
+          <div class="meta">
+            <span class="tag">Windows</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">Scripts</span>
+          </div>
+          <p>Script for Windows to remove ASUS bloatware and leftovers</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/remove-asus-bloatware" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+          </div>
+        </div>
+      </section>
+  
+      <h3 id="browser-scripts" class="section-title">Browser Scripts</h3>
+  	
+      <section class="section grid">
+        <div class="card" data-stars data-installs data-script-id="github-header-shortcuts">
+          <h2><img src="icons/github_logo.png" alt="GitHub logo" class="icon-card">GitHub - Enhanced Shortcuts & Header Toolbar</h2>
+          <div class="meta">
+            <span class="tag">Browser</span>
+            <span class="tag">Userscript</span>
+            <span class="tag">Tampermonkey</span>
+          </div>
+          <p>Userscript that extends GitHub navigation with a customizable header toolbar and unified shortcuts</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/github-header-shortcuts" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+            <a class="btn" href="https://greasyfork.org/en/scripts/553502-github-enhanced-shortcuts-header-toolbar" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+            <a class="btn" href="https://openuserjs.org/scripts/Vikindor/GitHub_-_Enhanced_Shortcuts_Header_Toolbar" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
+          </div>
+        </div>
+  
+        <div class="card" data-stars data-installs data-script-id="twitch-keep-tab-active">
+          <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Keep Tab Active</h2>
+          <div class="meta">
+            <span class="tag">Browser</span>
+            <span class="tag">Userscript</span>
+            <span class="tag">Tampermonkey</span>
+          </div>
+          <p>Userscript that prevents Twitch from auto-pausing when the tab is inactive</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/twitch-keep-tab-active" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+            <a class="btn" href="https://greasyfork.org/en/scripts/553862-twitch-keep-tab-active" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+            <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Keep_Tab_Active" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
+          </div>
+        </div>
+  
+        <div class="card" data-stars data-installs data-script-id="twitch-show-stream-language">
+          <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Show Stream Language</h2>
+          <div class="meta">
+            <span class="tag">Browser</span>
+            <span class="tag">Userscript</span>
+            <span class="tag">Tampermonkey</span>
+          </div>
+          <p>Userscript that displays a stream’s language tag like [EN], [JA], etc.</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/twitch-show-stream-language" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+            <a class="btn" href="https://greasyfork.org/en/scripts/552795-twitch-show-stream-language" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+            <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Show_Stream_Language" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
+          </div>
+        </div>
+  
+        <div class="card" data-stars data-installs data-script-id="twitch-force-sort-viewers">
+          <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Force sort Viewers High to Low</h2>
+          <div class="meta">
+            <span class="tag">Browser</span>
+            <span class="tag">Userscript</span>
+            <span class="tag">Tampermonkey</span>
+          </div>
+          <p>Userscript that auto-sorts Twitch channels by viewer count</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/twitch-force-sort-viewers" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+            <a class="btn" href="https://greasyfork.org/en/scripts/549727-twitch-force-sort-viewers-high-to-low" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+            <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Force_sort_Viewers_High_to_Low" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
+          </div>
+        </div>
+  
+        <div class="card" data-stars data-installs data-script-id="rutube-block-autoplay">
+          <h2><img src="icons/rutube_logo.png" alt="Rutube logo" class="icon-card">Rutube - Block Autoplay</h2>
+          <div class="meta">
+            <span class="tag">Browser</span>
+            <span class="tag">Userscript</span>
+            <span class="tag">Tampermonkey</span>
+          </div>
+          <p>Userscript that blocks video autoplay on Rutube and embeds</p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/Vikindor/rutube-block-autoplay" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
+            <a class="btn" href="https://greasyfork.org/en/scripts/544729-rutube-block-autoplay/" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
+            <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Rutube_-_Block_Autoplay" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
+          </div>
+        </div>
+      </section>
+	</div>
     
-      <div class="lang-switch">
-        <span class="lang-current">EN</span>
-        <span class="lang-sep">|</span>
-        <a href="ru.html">RU</a>
-      </div>
-    </header>
-
-    <h2 class="section-title">ABOUT</h3>
-    <section class="about">
-      <div class="card">
-        <p>QA engineer with experience in manual and automated testing of web and mobile applications. Automation in Java: UI, API, and mobile tests using JUnit 5, Selenide, Appium, and REST Assured. Familiar with Allure, CI pipelines, and Git.</p>
-      </div>
-    </section>
-	
-    <div class="section-divider"></div>
-    
-    <h2 class="section-title">PORTFOLIO</h3>
-    <section class="section grid">
-      <div class="card card--featured">
-        <h2><img src="icons/todoist_logo.png" alt="Todoist logo" class="icon-card">Multi-Layer Test Automation Framework for Todoist app</h2>
-
-        <div class="meta">
-          <span class="tag">QA Automation</span>
-          <span class="tag">API</span>
-          <span class="tag">Web UI</span>
-          <span class="tag">Android</span>
-          <span class="tag">REST Assured</span>
-          <span class="tag">Java</span>
-          <span class="tag">Selenide</span>
-          <span class="tag">Appium</span>
-          <span class="tag">JUnit 5</span>
-          <span class="tag">Allure</span>
-        </div>
-
-        <p>
-          Enterprise-grade multi-layer test automation framework
-          covering the same product across API, Web UI, and Android
-          platforms. Designed as a multi-module Gradle project with
-          unified reporting, CI integration, and environment-agnostic
-          execution model.
-        </p>
-
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/todoist-test-automation" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-        </div>
-      </div>
-    </section>
-    
-    <div class="section-divider"></div>
-    
-    <h2 class="section-title">SIDE PROJECTS</h3>
-	
-    <section class="about">
-      <div class="card">
-        <p>
-          • Built for everyday use<br>
-          • Some projects are just experiments<br>
-          • No ads, no analytics, no tracking
-        </p>
-      </div>
-    </section>
-
-    <h3 id="tools" class="section-title">Dev Tools</h3>
-	
-    <section class="section grid">
-      <div class="card">
-        <h2><img src="icons/allure_report_logo.png" alt="Allure Report logo" class="icon-card">Allure Report - HTTP Templates</h2>
-        <div class="meta">
-          <span class="tag">Allure</span>
-          <span class="tag">REST Assured</span>
-          <span class="tag">Templates</span>
-        </div>
-        <p>Custom FreeMarker templates for improved Request/Response rendering in Allure Report</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/allure-report-templates" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-        </div>
-      </div>
-	
-      <div class="card">
-        <h2><img src="icons/selenoid_logo.png" alt="Selenoid logo" class="icon-card">Selenoid via Aerokube CM</h2>
-        <div class="meta">
-          <span class="tag">DevOps</span>
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">Composite Action</span>
-        </div>
-        <p>Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/selenoid-github-action" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-          <a class="btn" href="https://github.com/marketplace/actions/selenoid-via-cm" target="_blank" rel="noopener"><img src="icons/marketplace_icon.png" alt="GitHub Marketplace icon" class="icon-badge">Marketplace</a>
-        </div>
-      </div>
-    </section>
-
-    <h3 id="apps" class="section-title">Apps</h3>
-	
-    <section class="section grid">
-      <div class="card">
-        <h2><img src="icons/peaktoday_logo.png" alt="Peak Today web logo" class="icon-card">Peak Today (Web)</h2>
-        <div class="meta">
-          <span class="tag">Web</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">Open Source</span>
-        </div>
-        <p>Browser-based map rotation timer for Peak game</p>
-        <div class="actions">
-          <a class="btn" href="https://vikindor.github.io/peaktoday/" target="_blank" rel="noopener"><img src="icons/web_icon.png" alt="Web icon" class="icon-badge">Web page</a>
-          <a class="btn" href="https://github.com/Vikindor/peaktoday" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-        </div>
-      </div>	
-
-      <div class="card">
-        <h2><img src="icons/peaktoday_logo.png" alt="Peak Today app logo" class="icon-card">Peak Today (Android)</h2>
-        <div class="meta">
-          <span class="tag">Android</span>
-          <span class="tag">Kotlin</span>
-          <span class="tag">Open Source</span>
-        </div>
-        <p>Minimalist Android map rotation timer for Peak game</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/peaktoday-android" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <h3 id="tools" class="section-title">System</h3>
-	
-    <section class="section grid">
-      <div class="card">
-        <h2><img src="icons/edge_logo.png" alt="Edge logo" class="icon-card">Disable Microsoft Edge Updates</h2>
-        <div class="meta">
-          <span class="tag">Windows</span>
-          <span class="tag">PowerShell</span>
-          <span class="tag">Scripts</span>
-        </div>
-        <p>Script for Windows to disable and remove Microsoft Edge auto-updates</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/disable-edge-update" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-        </div>
-      </div>
-	  
-      <div class="card">
-        <h2><img src="icons/asus_crate_logo.png" alt="ASUS Armoury Crate logo" class="icon-card">Remove ASUS Bloatware</h2>
-        <div class="meta">
-          <span class="tag">Windows</span>
-          <span class="tag">PowerShell</span>
-          <span class="tag">Scripts</span>
-        </div>
-        <p>Script for Windows to remove ASUS bloatware and leftovers</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/remove-asus-bloatware" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-        </div>
-      </div>
-    </section>
-
-    <h3 id="browser-scripts" class="section-title">Browser Scripts</h3>
-	
-    <section class="section grid">
-      <div class="card" data-installs data-script-id="github-header-shortcuts">
-        <h2><img src="icons/github_logo.png" alt="GitHub logo" class="icon-card">GitHub - Enhanced Shortcuts & Header Toolbar</h2>
-        <div class="meta">
-          <span class="tag">Browser</span>
-          <span class="tag">Userscript</span>
-          <span class="tag">Tampermonkey</span>
-        </div>
-        <p>Userscript that extends GitHub navigation with a customizable header toolbar and unified shortcuts</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/github-header-shortcuts" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-          <a class="btn" href="https://greasyfork.org/en/scripts/553502-github-enhanced-shortcuts-header-toolbar" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
-          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/GitHub_-_Enhanced_Shortcuts_Header_Toolbar" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
-        </div>
-      </div>
-
-      <div class="card" data-installs data-script-id="twitch-keep-tab-active">
-        <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Keep Tab Active</h2>
-        <div class="meta">
-          <span class="tag">Browser</span>
-          <span class="tag">Userscript</span>
-          <span class="tag">Tampermonkey</span>
-        </div>
-        <p>Userscript that prevents Twitch from auto-pausing when the tab is inactive</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/twitch-keep-tab-active" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-          <a class="btn" href="https://greasyfork.org/en/scripts/553862-twitch-keep-tab-active" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
-          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Keep_Tab_Active" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
-        </div>
-      </div>
-
-      <div class="card" data-installs data-script-id="twitch-show-stream-language">
-        <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Show Stream Language</h2>
-        <div class="meta">
-          <span class="tag">Browser</span>
-          <span class="tag">Userscript</span>
-          <span class="tag">Tampermonkey</span>
-        </div>
-        <p>Userscript that displays a stream’s language tag like [EN], [JA], etc.</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/twitch-show-stream-language" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-          <a class="btn" href="https://greasyfork.org/en/scripts/552795-twitch-show-stream-language" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
-          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Show_Stream_Language" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
-        </div>
-      </div>
-
-      <div class="card" data-installs data-script-id="twitch-force-sort-viewers">
-        <h2><img src="icons/twitch_logo.png" alt="Twitch logo" class="icon-card">Twitch - Force sort Viewers High to Low</h2>
-        <div class="meta">
-          <span class="tag">Browser</span>
-          <span class="tag">Userscript</span>
-          <span class="tag">Tampermonkey</span>
-        </div>
-        <p>Userscript that auto-sorts Twitch channels by viewer count</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/twitch-force-sort-viewers" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-          <a class="btn" href="https://greasyfork.org/en/scripts/549727-twitch-force-sort-viewers-high-to-low" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
-          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Twitch_-_Force_sort_Viewers_High_to_Low" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
-        </div>
-      </div>
-
-      <div class="card" data-installs data-script-id="rutube-block-autoplay">
-        <h2><img src="icons/rutube_logo.png" alt="Rutube logo" class="icon-card">Rutube - Block Autoplay</h2>
-        <div class="meta">
-          <span class="tag">Browser</span>
-          <span class="tag">Userscript</span>
-          <span class="tag">Tampermonkey</span>
-        </div>
-        <p>Userscript that blocks video autoplay on Rutube and embeds</p>
-        <div class="actions">
-          <a class="btn" href="https://github.com/Vikindor/rutube-block-autoplay" target="_blank" rel="noopener"><img src="icons/github_logo.png" alt="GitHub logo" class="icon-badge">GitHub</a>
-          <a class="btn" href="https://greasyfork.org/en/scripts/544729-rutube-block-autoplay/" target="_blank" rel="noopener"><img src="icons/greasyfork_logo.png" alt="GreasyFork logo" class="icon-badge">GreasyFork</a>
-          <a class="btn" href="https://openuserjs.org/scripts/Vikindor/Rutube_-_Block_Autoplay" target="_blank" rel="noopener"><img src="icons/openuserjs_logo.png" alt="OpenUserJS logo" class="icon-badge">OpenUserJS</a>
-        </div>
-      </div>
-    </section>
-
     <script>
     (async () => {
-      const cards = document.querySelectorAll('.card[data-installs]');
+      const cards = document.querySelectorAll('.card[data-stars], .card[data-installs]');
+      if (!cards.length) return;
     
       let data;
       try {
-        const res = await fetch('/data/installs.json');
+        const res = await fetch('/data/metrics.json');
         if (!res.ok) return;
         data = await res.json();
       } catch {
@@ -575,21 +585,52 @@
     
       for (const card of cards) {
         const id = card.dataset.scriptId;
-        if (!id || !data[id]?.total) continue;
+        if (!id || !data[id]) continue;
     
-        const installsEl = document.createElement('div');
-        installsEl.className = 'installs';
-        installsEl.title = 'Total installs (GreasyFork + OpenUserJS)';
+        const stars = data[id].stars;
+        const installs = data[id].installs?.total;
+
+        if (!(Number.isFinite(stars) && stars > 0) &&
+            !(Number.isFinite(installs) && installs > 0)) {
+          continue;
+        }
     
-        installsEl.innerHTML = `
-          <img src="icons/install_icon.png" class="icon-installs">
-          <span>Installs: ${data[id].total.toLocaleString()}</span>
-        `;
+        let metrics = card.querySelector('.meta-metrics');
+        if (!metrics) {
+          metrics = document.createElement('div');
+          metrics.className = 'meta-metrics';
+          card.querySelector('.meta')?.appendChild(metrics);
+        }
     
-        card.querySelector('.meta')?.appendChild(installsEl);
+        // Stars
+        if (Number.isFinite(stars) && stars > 0 && card.hasAttribute('data-stars')) {
+          const starsEl = document.createElement('div');
+          starsEl.className = 'stars';
+          starsEl.title = 'GitHub stars';
+    
+          starsEl.innerHTML = `
+            <span>⭐</span>
+            <span>${stars.toLocaleString()}</span>
+          `;
+    
+          metrics.appendChild(starsEl);
+        }
+    
+        // Installs
+        if (Number.isFinite(installs) && installs > 0 && card.hasAttribute('data-installs')) {
+          const installsEl = document.createElement('div');
+          installsEl.className = 'installs';
+          installsEl.title = 'Total installs (GreasyFork + OpenUserJS)';
+    
+          installsEl.innerHTML = `
+            <img src="icons/install_icon.png" class="icon-installs">
+            <span>Installs: ${installs.toLocaleString()}</span>
+          `;
+    
+          metrics.appendChild(installsEl);
+        }
       }
     })();
     </script>
-
-</body>
+  </body>
 </html>
