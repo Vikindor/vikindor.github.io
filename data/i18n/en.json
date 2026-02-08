@@ -1,0 +1,93 @@
+{
+  "lang": {
+    "en": "EN",
+    "ru": "RU"
+  },
+
+  "header": {
+    "role": "Automation QA",
+    "stack": "Java • Selenide • Appium • Web • API • Mobile",
+    "links": {
+      "github": "GitHub",
+      "mail": "Mail",
+      "telegram": "Telegram"
+    }
+  },
+
+  "sections": {
+    "about": "ABOUT",
+    "portfolio": "PORTFOLIO",
+    "sideProjects": "SIDE PROJECTS",
+    "devTools": "Dev Tools",
+    "apps": "Apps",
+    "system": "System",
+    "browserScripts": "Browser Scripts"
+  },
+
+  "about": {
+    "text": "QA engineer with experience in manual and automated testing of web and mobile applications. Automation in Java: UI, API, and mobile tests using JUnit 5, Selenide, Appium, and REST Assured. Familiar with Allure, CI pipelines, and Git."
+  },
+
+  "portfolio": {
+    "todoist": {
+      "title": "Multi-Layer Test Automation Framework for Todoist app",
+      "description": "Enterprise-grade multi-layer test automation framework covering the same product across API, Web UI, and Android platforms. Designed as a multi-module Gradle project with unified reporting, CI integration, and environment-agnostic execution model."
+    }
+  },
+
+  "sideProjects": {
+    "intro": "• Built for everyday use<br>• Some projects are just experiments<br>• No ads, no analytics, no tracking"
+  },
+
+  "projects": {
+    "allureTemplates": {
+      "title": "Allure Report - HTTP Templates",
+      "description": "Custom FreeMarker templates for improved Request/Response rendering in Allure Report"
+    },
+    "selenoid": {
+      "title": "Selenoid via Aerokube CM",
+      "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)"
+    },
+    "peaktodayWeb": {
+      "title": "Peak Today (Web)",
+      "description": "Browser-based map rotation timer for Peak game"
+    },
+    "peaktodayAndroid": {
+      "title": "Peak Today (Android)",
+      "description": "Minimalist Android map rotation timer for Peak game"
+    },
+    "edge": {
+      "title": "Disable Microsoft Edge Updates",
+      "description": "Script for Windows to disable and remove Microsoft Edge auto-updates"
+    },
+    "asus": {
+      "title": "Remove ASUS Bloatware",
+      "description": "Script for Windows to remove ASUS bloatware and leftovers"
+    },
+    "githubShortcuts": {
+      "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
+      "description": "Userscript that extends GitHub navigation with a customizable header toolbar and unified shortcuts"
+    },
+    "twitchKeepActive": {
+      "title": "Twitch - Keep Tab Active",
+      "description": "Userscript that prevents Twitch from auto-pausing when the tab is inactive"
+    },
+    "twitchLanguage": {
+      "title": "Twitch - Show Stream Language",
+      "description": "Userscript that displays a stream’s language tag like [EN], [JA], etc."
+    },
+    "twitchSort": {
+      "title": "Twitch - Force sort Viewers High to Low",
+      "description": "Userscript that auto-sorts Twitch channels by viewer count"
+    },
+    "rutube": {
+      "title": "Rutube - Block Autoplay",
+      "description": "Userscript that blocks video autoplay on Rutube and embeds"
+    }
+  },
+
+  "common": {
+    "marketplace": "Marketplace",
+    "webPage": "Web page"
+  }
+}
