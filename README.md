@@ -30,7 +30,7 @@ The site is intentionally kept lightweight and framework-free, focusing on clean
 
 - HTML5  
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 
 ## 📁 Project structure
 
@@ -38,9 +38,10 @@ The site is intentionally kept lightweight and framework-free, focusing on clean
 index.html          # Single-page site
 css/                # Stylesheets
 data/
-  i18n/              # Localization files (en / ru)
+  i18n/              # Localization files
   projects.json      # Projects links
   metrics.json       # GitHub stars & installs data
+js/                  # JavaScript files
 icons/               # UI icons
 images/              # Images and assets
 ```
