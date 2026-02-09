@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <h3 id="tools" class="section-title" data-i18n="sections.devTools"></h3>
+    <h3 id="dev" class="section-title" data-i18n="sections.devTools"></h3>
 
     <section class="section grid">
         <div class="card" data-stars data-script-id="allure-report-templates">
@@ -196,7 +196,7 @@
         </div>
     </section>
 
-    <h3 id="tools" class="section-title" data-i18n="sections.system"></h3>
+    <h3 id="system" class="section-title" data-i18n="sections.system"></h3>
 
     <section class="section grid">
         <div class="card" data-stars data-script-id="disable-edge-updates">
@@ -395,109 +395,7 @@
     <span>2026 · Vikindor</span>
 </footer>
 
-<script>
-    (function () {
-      const LANG_KEY = "lang";
-
-      function getByPath(obj, path) {
-        return path.split(".").reduce((acc, key) => acc[key], obj);
-      }
-
-      async function loadLang(lang) {
-        const res = await fetch(`data/i18n/${lang}.json`);
-        const dict = await res.json();
-
-        document.documentElement.lang = lang;
-
-        document.querySelectorAll("[data-i18n]").forEach(el => {
-          el.textContent = getByPath(dict, el.dataset.i18n);
-        });
-
-        document.querySelectorAll("[data-mail-en]").forEach(el => {
-          const key = `mail${lang[0].toUpperCase()}${lang.slice(1)}`;
-          el.href = `mailto:${el.dataset[key]}`;
-        });
-
-        document.querySelectorAll("[data-lang]").forEach(el => {
-          el.classList.toggle("lang-current", el.dataset.lang === lang);
-        });
-
-        localStorage.setItem(LANG_KEY, lang);
-      }
-
-      const initialLang = localStorage.getItem(LANG_KEY) || "en";
-      loadLang(initialLang);
-
-      document.addEventListener("click", e => {
-        const btn = e.target.closest("[data-lang]");
-        if (!btn) return;
-
-        e.preventDefault();
-        loadLang(btn.dataset.lang);
-      });
-    })();
-</script>
-
-<script>
-    (async () => {
-      const cards = document.querySelectorAll('.card[data-stars], .card[data-installs]');
-      if (!cards.length) return;
-    
-      let data;
-      try {
-        const res = await fetch('data/metrics.json');
-        if (!res.ok) return;
-        data = await res.json();
-      } catch {
-        return;
-      }
-    
-      for (const card of cards) {
-        const id = card.dataset.scriptId;
-        if (!id || !data[id]) continue;
-    
-        const stars = data[id].stars;
-        const installs = data[id].installs?.total;
-
-        if (!(Number.isFinite(stars) && stars > 0) &&
-            !(Number.isFinite(installs) && installs > 0)) {
-          continue;
-        }
-    
-        let metrics = card.querySelector('.meta-metrics');
-        if (!metrics) {
-          metrics = document.createElement('div');
-          metrics.className = 'meta-metrics';
-          card.querySelector('.meta')?.appendChild(metrics);
-        }
-    
-        if (Number.isFinite(stars) && stars > 0 && card.hasAttribute('data-stars')) {
-          const starsEl = document.createElement('div');
-          starsEl.className = 'stars';
-          starsEl.title = 'GitHub stars';
-    
-          starsEl.innerHTML = `
-            <span>⭐</span>
-            <span>${stars.toLocaleString()}</span>
-          `;
-    
-          metrics.appendChild(starsEl);
-        }
-    
-        if (Number.isFinite(installs) && installs > 0 && card.hasAttribute('data-installs')) {
-          const installsEl = document.createElement('div');
-          installsEl.className = 'installs';
-          installsEl.title = 'Total installs (GreasyFork + OpenUserJS)';
-    
-          installsEl.innerHTML = `
-            <img src="icons/install_icon.png" class="icon-installs">
-            <span>Installs: ${installs.toLocaleString()}</span>
-          `;
-    
-          metrics.appendChild(installsEl);
-        }
-      }
-    })();
-</script>
+<script src="js/i18n.js"></script>
+<script src="js/metrics.js"></script>
 </body>
 </html>
