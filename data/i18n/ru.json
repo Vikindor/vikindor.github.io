@@ -3,7 +3,6 @@
     "role": "Automation QA",
     "stack": "Java • Selenide • Appium • Web • API • Mobile",
     "links": {
-      "github": "GitHub",
       "mail": "Почта",
       "telegram": "Telegram"
     }
@@ -44,11 +43,11 @@
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",
-      "description": "Таймер ротации карт для игры Peak, работающий прямо в браузере"
+      "description": "Таймер ротации карт для игры Peak, работающий прямо в браузере. Более не поддерживается."
     },
     "peaktodayAndroid": {
       "title": "Peak Today (Android)",
-      "description": "Минималистичный Android-таймер ротации карт для игры Peak"
+      "description": "Минималистичный Android-таймер ротации карт для игры Peak. Более не поддерживается."
     },
     "edge": {
       "title": "Disable Microsoft Edge Updates",
@@ -65,6 +64,10 @@
     "twitchKeepActive": {
       "title": "Twitch - Keep Tab Active",
       "description": "Скрипт, который не даёт Twitch автоматически ставить стрим на паузу при неактивной вкладке и возобновляет воспроизведение после сбоев"
+    },
+    "twitchToggleQuality": {
+      "title": "Twitch - Toggle Video Quality",
+      "description": "Скрипт, который переключает качество стрима между минимально доступным и предпочтительным разрешением"
     },
     "twitchLanguage": {
       "title": "Twitch - Show Stream Language",
