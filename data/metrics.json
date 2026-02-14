@@ -26,8 +26,8 @@
     "stars": 0,
     "installs": {
       "greasyfork": 31,
-      "openuserjs": 32,
-      "total": 63
+      "openuserjs": 37,
+      "total": 68
     }
   },
   "selenoid-github-action": {
@@ -40,24 +40,32 @@
     "stars": 0,
     "installs": {
       "greasyfork": 5,
-      "openuserjs": 15,
-      "total": 20
+      "openuserjs": 16,
+      "total": 21
     }
   },
   "twitch-keep-tab-active": {
     "stars": 1,
     "installs": {
-      "greasyfork": 108,
-      "openuserjs": 71,
-      "total": 179
+      "greasyfork": 127,
+      "openuserjs": 80,
+      "total": 207
     }
   },
   "twitch-show-stream-language": {
     "stars": 0,
     "installs": {
       "greasyfork": 3,
-      "openuserjs": 8,
-      "total": 11
+      "openuserjs": 9,
+      "total": 12
+    }
+  },
+  "twitch-toggle-video-quality": {
+    "stars": 0,
+    "installs": {
+      "greasyfork": 0,
+      "openuserjs": 0,
+      "total": 0
     }
   }
 }
