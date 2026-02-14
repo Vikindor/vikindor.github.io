@@ -30,6 +30,11 @@
     "greasyfork": "https://api.greasyfork.org/scripts/553862.json",
     "openuserjs": "https://openuserjs.org/meta/Vikindor/Twitch_-_Keep_Tab_Active.meta.json"
   },
+  "twitch-toggle-video-quality": {
+    "github": "Vikindor/twitch-toggle-video-quality",
+    "greasyfork": "https://api.greasyfork.org/scripts/566269.json",
+    "openuserjs": "https://openuserjs.org/meta/Vikindor/Twitch_-_Toggle_Video_Quality.meta.json"
+  },
   "twitch-show-stream-language": {
     "github": "Vikindor/twitch-show-stream-language",
     "greasyfork": "https://api.greasyfork.org/en/scripts/552795.json",
