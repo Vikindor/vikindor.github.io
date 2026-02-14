@@ -8,9 +8,8 @@ vikindor.github.io
 
 </div>
 
-Source code of my personal website containing portfolio and pet projects, hosted on GitHub Pages.
-
-The site is intentionally kept lightweight and framework-free, focusing on clean markup, simple structure, and maintainability.
+Source code of my personal website containing portfolio and pet projects, hosted on GitHub Pages.  
+The site is lightweight and framework-free, focusing on clean markup, simple structure, and maintainability.
 
 ## 🌐 Live
 
@@ -21,21 +20,23 @@ The site is intentionally kept lightweight and framework-free, focusing on clean
 - Static GitHub Pages website
 - English / Russian localization (client-side i18n)
 - Single HTML source (no duplicated pages)
-- External CSS stylesheet
-- Dynamic GitHub stars and Usersctipts installs counters
+- CSS stylesheet
+- JS for dynamic GitHub stars and Usersctipts installs counters
 - Responsive layout
 - No analytics, no tracking, no third-party scripts
 
 ## 🛠️ Tech stack
 
-- HTML5  
+- HTML5
 - CSS3
 - JavaScript
+- GitHub Actions
 
 ## 📁 Project structure
 
 ```text
 index.html          # Single-page site
+.github/            # GitHub Actions workflow
 css/                # Stylesheets
 data/
   i18n/              # Localization files
@@ -49,6 +50,5 @@ images/              # Images and assets
 ## ℹ️ Notes
 
 - Localization is handled via a simple client-side i18n mechanism using JSON dictionaries
-- GitHub stars and Userscripts installs counters are fetched dynamically from a static JSON file
-- The project intentionally avoids build tools, bundlers, and frameworks
+- GitHub stars and userscript install counts are fetched via GitHub Actions and stored in a static JSON file
 - Designed to stay simple, readable, and easy to maintain
