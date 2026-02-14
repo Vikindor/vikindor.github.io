@@ -39,12 +39,12 @@ index.html          # Single-page site
 .github/            # GitHub Actions workflow
 css/                # Stylesheets
 data/
-  i18n/              # Localization files
-  projects.json      # Projects links
-  metrics.json       # GitHub stars & installs data
-js/                  # JavaScript files
-icons/               # UI icons
-images/              # Images and assets
+  i18n/             # Localization files
+  projects.json     # Projects links
+  metrics.json      # GitHub stars & installs data
+js/                 # JavaScript files
+icons/              # UI icons
+images/             # Images and assets
 ```
 
 ## ℹ️ Notes
