@@ -193,6 +193,22 @@ h3.section-title{
   background:#121a2b;
 }
 
+.tag--new{
+  background:linear-gradient(180deg, #1f2f55, #182650);
+  border:1px solid rgba(140, 180, 255, 0.6);
+  color:#eaf2ff;
+  box-shadow:
+    0 0 10px rgba(120,160,255,0.45),
+    0 0 22px rgba(100,140,255,0.25);
+  font-weight:600;
+}
+
+.tag--unmaintained{
+  background:#161b25;
+  border:1px solid rgba(160,170,190,0.35);
+  color:#a8b0c4;
+}
+
 .actions{
   margin-top:auto;
   display:flex;
