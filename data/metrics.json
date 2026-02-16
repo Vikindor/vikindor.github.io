@@ -25,9 +25,9 @@
   "rutube-block-autoplay": {
     "stars": 0,
     "installs": {
-      "greasyfork": 31,
-      "openuserjs": 37,
-      "total": 68
+      "greasyfork": 33,
+      "openuserjs": 41,
+      "total": 74
     }
   },
   "selenoid-github-action": {
@@ -40,16 +40,16 @@
     "stars": 0,
     "installs": {
       "greasyfork": 5,
-      "openuserjs": 16,
-      "total": 21
+      "openuserjs": 17,
+      "total": 22
     }
   },
   "twitch-keep-tab-active": {
     "stars": 1,
     "installs": {
-      "greasyfork": 127,
-      "openuserjs": 80,
-      "total": 207
+      "greasyfork": 140,
+      "openuserjs": 85,
+      "total": 225
     }
   },
   "twitch-show-stream-language": {
