@@ -31,6 +31,7 @@ The site is lightweight and framework-free, focusing on clean markup, simple str
 - CSS3
 - JavaScript
 - GitHub Actions
+- Gist
 
 ## 📁 Project structure
 
@@ -41,14 +42,16 @@ css/                # Stylesheets
 data/
   i18n/             # Localization files
   projects.json     # Projects links
-  metrics.json      # GitHub stars & installs data
 js/                 # JavaScript files
 icons/              # UI icons
 images/             # Images and assets
+```
+```text
+Gist                # GitHub stars & scripts installs data
 ```
 
 ## ℹ️ Notes
 
 - Localization is handled via a simple client-side i18n mechanism using JSON dictionaries
-- GitHub stars and userscript install counts are fetched via GitHub Actions and stored in a static JSON file
+- GitHub stars and userscript install counts are fetched via GitHub Actions and stored in a static JSON Gist file
 - Designed to stay simple, readable, and easy to maintain
