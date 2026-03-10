@@ -1,4 +1,4 @@
-name: Update project metrics
+name: update project metrics
 
 on:
   schedule:
@@ -23,9 +23,8 @@ jobs:
           set -e
 
           PROJECTS_FILE="data/projects.json"
-          OUTPUT_FILE="data/metrics.json"
+          OUTPUT_FILE="$(mktemp)"
 
-          mkdir -p data
           echo '{}' > "$OUTPUT_FILE"
 
           for ID in $(jq -r 'keys[]' "$PROJECTS_FILE"); do
@@ -39,7 +38,7 @@ jobs:
               STARS=$(curl -s \
                 -H "Authorization: Bearer $GITHUB_TOKEN" \
                 -H "Accept: application/vnd.github+json" \
-                https://api.github.com/repos/$GH_REPO \
+                "https://api.github.com/repos/$GH_REPO" \
                 | jq -r '.stargazers_count // 0' 2>/dev/null)
 
               [[ "$STARS" =~ ^[0-9]+$ ]] || STARS=0
@@ -96,11 +95,15 @@ jobs:
             fi
           done
 
-      - name: Commit metrics
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          echo "METRICS_FILE=$OUTPUT_FILE" >> "$GITHUB_ENV"
 
-          git add data/metrics.json
-          git commit -m "chore: update project metrics" || exit 0
-          git push
+      - name: Update gist
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+        run: |
+          curl --fail --silent --show-error \
+            -X PATCH https://api.github.com/gists/d59c4bdaa17b19f7cd1c30404b4699a3 \
+            -H "Authorization: Bearer $GIST_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -d "$(jq -n --arg content "$(cat "$METRICS_FILE")" \
+              '{files: {"personal-page-metrics.json": {content: $content}}}')"
