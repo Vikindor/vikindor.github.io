@@ -4,7 +4,7 @@
 
   let data;
   try {
-    const res = await fetch('data/metrics.json');
+    const res = await fetch('https://gist.githubusercontent.com/Vikindor/d59c4bdaa17b19f7cd1c30404b4699a3/raw/personal-page-metrics.json');
     if (!res.ok) return;
     data = await res.json();
   } catch {
