@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: checkout repo
+        uses: actions/checkout@v6
 
-      - name: Fetch metrics
+      - name: fetch metrics
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -97,12 +97,12 @@ jobs:
 
           echo "METRICS_FILE=$OUTPUT_FILE" >> "$GITHUB_ENV"
 
-      - name: Update gist
+      - name: update gist
         env:
           GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: |
           curl --fail --silent --show-error \
-            -X PATCH https://api.github.com/gists/d59c4bdaa17b19f7cd1c30404b4699a3 \
+            -X PATCH https://api.github.com/gists/bcc0b4b66a5cb9a06960a921197c29cd \
             -H "Authorization: Bearer $GIST_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             -d "$(jq -n --arg content "$(cat "$METRICS_FILE")" \
