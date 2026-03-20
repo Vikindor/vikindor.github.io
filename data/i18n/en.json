@@ -3,8 +3,7 @@
     "role": "Automation QA",
     "stack": "Java • Selenide • Appium • Web • API • Mobile",
     "links": {
-      "mail": "Mail",
-      "telegram": "Telegram"
+      "mail": "Mail"
     }
   },
   "sections": {
@@ -41,14 +40,6 @@
       "title": "Selenoid via Aerokube CM",
       "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)"
     },
-    "peaktodayWeb": {
-      "title": "Peak Today (Web)",
-      "description": "Browser-based map rotation timer for Peak game. No longer maintained."
-    },
-    "peaktodayAndroid": {
-      "title": "Peak Today (Android)",
-      "description": "Minimalist Android map rotation timer for Peak game. No longer maintained."
-    },
     "edge": {
       "title": "Disable Microsoft Edge Updates",
       "description": "Script for Windows to disable and remove Microsoft Edge auto-updates"
@@ -80,6 +71,18 @@
     "rutube": {
       "title": "Rutube - Block Autoplay",
       "description": "Userscript that blocks video autoplay on Rutube and embeds"
+    },
+    "twitchCampaigns": {
+      "title": "Twitch Campaigns",
+      "description": "GitHub Actions app that tracks Twitch Drops and posts updates to Telegram"
+    },
+    "peaktodayWeb": {
+      "title": "Peak Today (Web)",
+      "description": "Browser-based map rotation timer for Peak game. No longer maintained."
+    },
+    "peaktodayAndroid": {
+      "title": "Peak Today (Android)",
+      "description": "Minimalist Android map rotation timer for Peak game. No longer maintained."
     }
   },
   "common": {

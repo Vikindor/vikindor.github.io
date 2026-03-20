@@ -8,12 +8,6 @@
   "selenoid-github-action": {
     "github": "Vikindor/selenoid-github-action"
   },
-  "peaktoday": {
-    "github": "Vikindor/peaktoday"
-  },
-  "peaktoday-android": {
-    "github": "Vikindor/peaktoday-android"
-  },
   "disable-edge-updates": {
     "github": "Vikindor/disable-edge-updates"
   },
@@ -49,5 +43,14 @@
     "github": "Vikindor/rutube-block-autoplay",
     "greasyfork": "https://api.greasyfork.org/en/scripts/544729.json",
     "openuserjs": "https://openuserjs.org/meta/Vikindor/Rutube_-_Block_Autoplay.meta.json"
+  },
+  "twitchCampaigns": {
+    "github": "Vikindor/twitch-campaigns"
+  },
+  "peaktoday": {
+    "github": "Vikindor/peaktoday"
+  },
+  "peaktoday-android": {
+    "github": "Vikindor/peaktoday-android"
   }
 }
