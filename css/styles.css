@@ -17,6 +17,8 @@ body{
   color:var(--ink);
   font:16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Noto Sans", Arial;
   background:#0a0d14;
+  -webkit-user-select:none;
+  user-select:none;
 }
 
 a{ color:var(--acc); text-decoration:none }
@@ -64,6 +66,7 @@ a{ color:var(--acc); text-decoration:none }
   object-fit:cover;
   display:block;
   border-radius:50%;
+  -webkit-user-drag:none;
 }
 
 .title{
