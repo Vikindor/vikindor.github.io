@@ -16,19 +16,23 @@ body{
   margin:0;
   color:var(--ink);
   font:16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Noto Sans", Arial;
-  background:
-    radial-gradient(900px 600px at 90% -10%, #1f2a44, #0a0d14 60%),
-    radial-gradient(600px 500px at -10% 10%, #1b2340, transparent 60%),
-    repeating-linear-gradient(180deg, #0a0d14 0, #0c101f 600px, #0a0d14 1200px);
-  background-attachment: fixed;
+  background:#0a0d14;
 }
 
 a{ color:var(--acc); text-decoration:none }
+
+#tsparticles{
+  position:fixed;
+  inset:0;
+  z-index:0;
+}
 
 .wrap{
   max-width:1000px;
   margin:0 auto;
   padding:40px 20px 28px;
+  position:relative;
+  z-index:1;
 }
 
 .header{
@@ -109,7 +113,6 @@ h1{
 .lang-switch{
   font-size:14px;
   color:var(--muted);
-  opacity:.8;
   white-space:nowrap;
 }
 
@@ -290,6 +293,8 @@ code{
   color:var(--muted);
   font-size:14px;
   text-align:center;
+  position:relative;
+  z-index:1;
 }
 
 @media (max-width:720px){
