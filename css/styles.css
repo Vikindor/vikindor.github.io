@@ -114,6 +114,14 @@ h1{
 .badge:hover{ background:#1a2238 }
 
 .lang-switch{
+  display:inline-flex;
+  align-items:center;
+  padding:10px 14px;
+  border-radius:14px;
+  background:var(--card);
+  backdrop-filter:blur(6px);
+  border:1px solid var(--stroke);
+  box-shadow:var(--glow-card);
   font-size:14px;
   color:var(--muted);
   white-space:nowrap;
