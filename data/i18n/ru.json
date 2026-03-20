@@ -3,8 +3,7 @@
     "role": "Automation QA",
     "stack": "Java • Selenide • Appium • Web • API • Mobile",
     "links": {
-      "mail": "Почта",
-      "telegram": "Telegram"
+      "mail": "Почта"
     }
   },
   "sections": {
@@ -41,14 +40,6 @@
       "title": "Selenoid via Aerokube CM",
       "description": "Запуск локального Selenoid на GitHub-hosted раннерах с использованием Aerokube CM (composite action)"
     },
-    "peaktodayWeb": {
-      "title": "Peak Today (Web)",
-      "description": "Таймер ротации карт для игры Peak, работающий прямо в браузере. Более не поддерживается."
-    },
-    "peaktodayAndroid": {
-      "title": "Peak Today (Android)",
-      "description": "Минималистичный Android-таймер ротации карт для игры Peak. Более не поддерживается."
-    },
     "edge": {
       "title": "Disable Microsoft Edge Updates",
       "description": "Скрипт для Windows, отключающий и удаляющий автоматические обновления Microsoft Edge"
@@ -80,6 +71,18 @@
     "rutube": {
       "title": "Rutube - Block Autoplay",
       "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах"
+    },
+    "twitchCampaigns": {
+      "title": "Twitch Campaigns",
+      "description": "Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует обновления в Telegram"
+    },
+    "peaktodayWeb": {
+      "title": "Peak Today (Web)",
+      "description": "Таймер ротации карт для игры Peak, работающий прямо в браузере. Более не поддерживается."
+    },
+    "peaktodayAndroid": {
+      "title": "Peak Today (Android)",
+      "description": "Минималистичный Android-таймер ротации карт для игры Peak. Более не поддерживается."
     }
   },
   "common": {
