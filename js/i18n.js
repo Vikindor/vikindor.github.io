@@ -15,6 +15,10 @@
       el.textContent = getByPath(dict, el.dataset.i18n);
     });
 
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+      el.setAttribute("aria-label", getByPath(dict, el.dataset.i18nAriaLabel));
+    });
+
     document.querySelectorAll("[data-mail-en]").forEach(el => {
       const key = `mail${lang[0].toUpperCase()}${lang.slice(1)}`;
       el.href = `mailto:${el.dataset[key]}`;
