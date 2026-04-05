@@ -52,6 +52,7 @@ a{ color:var(--acc); text-decoration:none }
 }
 
 .avatar{
+  flex-shrink:0;
   width:92px;
   height:92px;
   border-radius:50%;
