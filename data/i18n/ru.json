@@ -2,7 +2,7 @@
   "header": {
     "role": "Automation QA",
     "stack": "Java • Selenide • Appium • Web • API • Mobile",
-    "hint": "Попробуй покликать по фону :)",
+    "hint": "Попробуйте покликать по фону :)",
     "hintCloseLabel": "Закрыть подсказку",
     "links": {
       "mail": "Почта"
