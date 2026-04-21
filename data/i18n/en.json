@@ -19,6 +19,7 @@
     "devTools": "Dev Tools",
     "apps": "Apps",
     "system": "System",
+    "browserAddons": "Browser Addons",
     "browserScripts": "Browser Scripts"
   },
   "about": {
@@ -53,6 +54,10 @@
     "asus": {
       "title": "Remove ASUS Bloatware",
       "description": "Script for Windows to remove ASUS bloatware and leftovers"
+    },
+    "twitchEnhancer": {
+      "title": "Twitch Enhancer",
+      "description": "Modular Chrome/Firefox extension for Twitch that combines several quality-of-life improvements in one place"
     },
     "githubShortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",

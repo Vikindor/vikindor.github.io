@@ -19,6 +19,7 @@
     "devTools": "Инструменты для разработки",
     "apps": "Приложения",
     "system": "Система",
+    "browserAddons": "Аддоны для браузера",
     "browserScripts": "Скрипты для браузера"
   },
   "about": {
@@ -40,7 +41,7 @@
   "projects": {
     "allureTemplates": {
       "title": "Allure Report - HTTP Templates",
-      "description": "Пользовательские FreeMarker шаблоны для исправления отображения запросов и ответов в Allure Report"
+      "description": "Кастомные FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report"
     },
     "selenoid": {
       "title": "Selenoid via Aerokube CM",
@@ -53,6 +54,10 @@
     "asus": {
       "title": "Remove ASUS Bloatware",
       "description": "Скрипт для Windows, который удаляет навязанный ASUS софт и оставшиеся после него хвосты"
+    },
+    "twitchEnhancer": {
+      "title": "Twitch Enhancer",
+      "description": "Модульное расширение для Chrome/Firefox с набором полезных улучшений для Twitch"
     },
     "githubShortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
