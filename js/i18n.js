@@ -19,11 +19,6 @@
       el.setAttribute("aria-label", getByPath(dict, el.dataset.i18nAriaLabel));
     });
 
-    document.querySelectorAll("[data-mail-en]").forEach(el => {
-      const key = `mail${lang[0].toUpperCase()}${lang.slice(1)}`;
-      el.href = `mailto:${el.dataset[key]}`;
-    });
-
     document.querySelectorAll("[data-href-en]").forEach(el => {
       const key = `href${lang[0].toUpperCase()}${lang.slice(1)}`;
       if (el.dataset[key]) {
