@@ -9,7 +9,8 @@
     }
   },
   "footer": {
-    "privacyPolicy": "Политика конфиденциальности"
+    "privacyPolicy": "Политика конфиденциальности",
+    "viewSource": "Исходный код"
   },
   "sections": {
     "about": "ОБО МНЕ",
