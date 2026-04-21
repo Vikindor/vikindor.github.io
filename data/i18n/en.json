@@ -8,6 +8,9 @@
       "mail": "Mail"
     }
   },
+  "footer": {
+    "privacyPolicy": "Privacy Policy"
+  },
   "sections": {
     "about": "ABOUT",
     "portfolio": "PORTFOLIO",

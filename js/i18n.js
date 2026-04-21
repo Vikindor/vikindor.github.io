@@ -24,6 +24,13 @@
       el.href = `mailto:${el.dataset[key]}`;
     });
 
+    document.querySelectorAll("[data-href-en]").forEach(el => {
+      const key = `href${lang[0].toUpperCase()}${lang.slice(1)}`;
+      if (el.dataset[key]) {
+        el.href = el.dataset[key];
+      }
+    });
+
     document.querySelectorAll("[data-lang]").forEach(el => {
       el.classList.toggle("lang-current", el.dataset.lang === lang);
     });

@@ -8,6 +8,9 @@
       "mail": "Почта"
     }
   },
+  "footer": {
+    "privacyPolicy": "Политика конфиденциальности"
+  },
   "sections": {
     "about": "ОБО МНЕ",
     "portfolio": "ПОРТФОЛИО",
