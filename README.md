@@ -46,6 +46,7 @@ js/                 # JavaScript files
 icons/              # UI icons
 images/             # Images and assets
 ```
+
 ```text
 Gist                # GitHub stars & scripts installs data
 ```
