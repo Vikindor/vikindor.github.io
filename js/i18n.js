@@ -34,13 +34,13 @@
   }
 
   const initialLang = localStorage.getItem(LANG_KEY) || "en";
-  loadLang(initialLang);
+  void loadLang(initialLang);
 
   document.addEventListener("click", e => {
     const btn = e.target.closest("[data-lang]");
     if (!btn) return;
 
     e.preventDefault();
-    loadLang(btn.dataset.lang);
+    void loadLang(btn.dataset.lang);
   });
 })();
