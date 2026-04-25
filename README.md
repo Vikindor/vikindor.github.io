@@ -15,16 +15,6 @@ The site is lightweight and framework-free, focusing on clean markup, simple str
 
 **https://vikindor.github.io/**
 
-## ✨ Features
-
-- Static GitHub Pages website
-- English / Russian localization (client-side i18n)
-- Single HTML source (no duplicated pages)
-- CSS stylesheet
-- JS for dynamic GitHub stars and Usersctipts installs counters
-- Responsive layout
-- No analytics, no tracking, no third-party scripts
-
 ## 🛠️ Tech stack
 
 - HTML5
@@ -36,23 +26,21 @@ The site is lightweight and framework-free, focusing on clean markup, simple str
 ## 📁 Project structure
 
 ```text
-index.html          # Single-page site
-.github/            # GitHub Actions workflow
-css/                # Stylesheets
+index.html                  # Main portfolio page
+privacy-policy.html         # Privacy policy (EN)
+privacy-policy-ru.html      # Privacy policy (RU)
+.github/                    # GitHub Actions workflow
+css/                        # Stylesheets
 data/
-  i18n/             # Localization files
-  projects.json     # Projects links
-js/                 # JavaScript files
-icons/              # UI icons
-images/             # Images and assets
-```
-
-```text
-Gist                # GitHub stars & scripts installs data
+  i18n/                     # Localization files
+  projects.json             # Metrics sources configuration
+js/                         # JavaScript files
+icons/                      # UI icons
+images/                     # Images and assets
 ```
 
 ## ℹ️ Notes
 
 - Localization is handled via a simple client-side i18n mechanism using JSON dictionaries
 - GitHub stars and userscript install counts are fetched via GitHub Actions and stored in a static JSON Gist file
-- Designed to stay simple, readable, and easy to maintain
+- No analytics, no tracking, no third-party hosted scripts
