@@ -1,8 +1,18 @@
 (function () {
   const LANG_KEY = "lang";
+  const langMenu = document.querySelector("[data-lang-menu]");
+  const langToggle = document.querySelector("[data-lang-toggle]");
+  const langPopup = document.querySelector("[data-lang-popup]");
 
   function getByPath(obj, path) {
     return path.split(".").reduce((acc, key) => acc[key], obj);
+  }
+
+  function setLangMenuOpen(isOpen) {
+    if (!langToggle || !langPopup) return;
+
+    langToggle.setAttribute("aria-expanded", String(isOpen));
+    langPopup.hidden = !isOpen;
   }
 
   async function loadLang(lang) {
@@ -31,16 +41,36 @@
     });
 
     localStorage.setItem(LANG_KEY, lang);
+    setLangMenuOpen(false);
   }
 
   const initialLang = localStorage.getItem(LANG_KEY) || "en";
   void loadLang(initialLang);
 
   document.addEventListener("click", e => {
-    const btn = e.target.closest("[data-lang]");
-    if (!btn) return;
+    const toggle = e.target.closest("[data-lang-toggle]");
+    if (toggle) {
+      e.preventDefault();
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setLangMenuOpen(!isOpen);
+      return;
+    }
 
-    e.preventDefault();
-    void loadLang(btn.dataset.lang);
+    const btn = e.target.closest("[data-lang]");
+    if (btn) {
+      e.preventDefault();
+      void loadLang(btn.dataset.lang);
+      return;
+    }
+
+    if (langMenu && !e.target.closest("[data-lang-menu]")) {
+      setLangMenuOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      setLangMenuOpen(false);
+    }
   });
 })();

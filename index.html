@@ -36,10 +36,30 @@
         </div>
 
         <div class="header-side">
-            <div class="lang-switch">
-                <a href="#" data-lang="en" class="lang-current">EN</a>
-                <span class="lang-sep">|</span>
-                <a href="#" data-lang="ru">RU</a>
+            <div class="lang-menu" data-lang-menu>
+                <button class="lang-button" type="button" aria-haspopup="true" aria-expanded="false"
+                        data-lang-toggle data-i18n-aria-label="header.languageButtonLabel">
+                    <svg class="lang-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         aria-hidden="true">
+                        <path d="m5 8 6 6"></path>
+                        <path d="m4 14 6-6 2-3"></path>
+                        <path d="M2 5h12"></path>
+                        <path d="M7 2h1"></path>
+                        <path d="m22 22-5-10-5 10"></path>
+                        <path d="M14 18h6"></path>
+                    </svg>
+                    <svg class="lang-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                         aria-hidden="true">
+                        <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                </button>
+
+                <div class="lang-menu-popup" data-lang-popup hidden>
+                    <button class="lang-option" type="button" data-lang="en">EN</button>
+                    <button class="lang-option" type="button" data-lang="ru">RU</button>
+                </div>
             </div>
 
             <div class="hint-banner" data-hint-banner hidden>

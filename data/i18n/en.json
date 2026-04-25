@@ -2,6 +2,7 @@
   "header": {
     "role": "Automation QA",
     "stack": "Java • Selenide • Appium • Web • API • Mobile",
+    "languageButtonLabel": "Change language",
     "hint": "Try clicking the background :)",
     "hintCloseLabel": "Dismiss hint",
     "links": {
