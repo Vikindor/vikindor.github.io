@@ -25,10 +25,6 @@
       el.textContent = getByPath(dict, el.dataset.i18n);
     });
 
-    document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
-      el.setAttribute("aria-label", getByPath(dict, el.dataset.i18nAriaLabel));
-    });
-
     document.querySelectorAll("[data-href-en]").forEach(el => {
       const key = `href${lang[0].toUpperCase()}${lang.slice(1)}`;
       if (el.dataset[key]) {

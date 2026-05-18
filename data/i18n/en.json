@@ -2,11 +2,10 @@
   "header": {
     "role": "Automation QA",
     "stack": "Java • Selenide • Appium • Web • API • Mobile",
-    "languageButtonLabel": "Change language",
     "hint": "Try clicking the background :)",
-    "hintCloseLabel": "Dismiss hint",
     "links": {
-      "mail": "Mail"
+      "mail": "Email",
+      "discord": "Discord"
     }
   },
   "footer": {

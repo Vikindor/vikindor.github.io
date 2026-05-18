@@ -125,7 +125,70 @@ h1{
   box-shadow:var(--glow-card);
 }
 
+.badge-button{
+  color:var(--acc);
+  font:inherit;
+  cursor:pointer;
+  appearance:none;
+}
+
 .badge:hover{ background:#1a2238 }
+
+.badge-popover{
+  position:relative;
+}
+
+.badge-popover-panel{
+  position:absolute;
+  top:calc(100% + 8px);
+  left:0;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:14px;
+  background:var(--card-solid);
+  border:1px solid var(--stroke);
+  box-shadow:var(--glow-card);
+  white-space:nowrap;
+}
+
+.badge-popover-panel[hidden]{
+  display:none;
+}
+
+.badge-popover-value{
+  color:var(--ink);
+  font-size:14px;
+  font-weight:600;
+}
+
+.badge-popover-copy{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:30px;
+  padding:0;
+  border-radius:10px;
+  border:1px solid var(--stroke);
+  background:transparent;
+  color:var(--ink);
+  cursor:pointer;
+}
+
+.badge-popover-copy .icon-badge{
+  transition:opacity .18s ease;
+}
+
+.badge-popover-copy.is-feedback .icon-badge{
+  opacity:0;
+}
+
+.badge-popover-copy:hover{
+  background:#1a2238;
+}
 
 .lang-menu{
   position:relative;
@@ -148,7 +211,7 @@ h1{
 }
 
 .lang-button:hover{
-  background:rgba(18, 24, 38, 0.96);
+  background:#1a2238;
 }
 
 .lang-button:focus-visible,
