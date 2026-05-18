@@ -343,7 +343,7 @@ h3.section-title{
   font-weight:600;
 }
 
-.tag--unmaintained{
+.tag--archived{
   background:#161b25;
   border:1px solid rgba(160,170,190,0.35);
   color:#a8b0c4;
