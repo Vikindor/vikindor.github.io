@@ -289,6 +289,32 @@ h3.section-title{
   box-shadow:var(--glow-card);
 }
 
+.card--archived{
+  background:rgba(21, 24, 31, 0.86);
+  border-color:rgba(170, 178, 196, 0.14);
+  box-shadow:0 2px 6px rgba(20, 24, 34, 0.28), 0 8px 22px rgba(16, 18, 26, 0.3);
+}
+
+.card--archived .meta,
+.card--archived .tag{
+  color:#9ea8bc;
+}
+
+.card--archived .tag{
+  background:#171b24;
+  border-color:rgba(160,170,190,0.22);
+}
+
+.card--archived .btn{
+  background:#171d2a;
+  border-color:rgba(160,170,190,0.16);
+  box-shadow:0 1px 3px rgba(24, 31, 49, 0.18), 0 2px 6px rgba(28, 38, 60, 0.2);
+}
+
+.card--archived .btn:hover{
+  background:#1a2130;
+}
+
 .card h2{
   font-size:18px;
   margin:0 0 10px;
@@ -341,12 +367,6 @@ h3.section-title{
     0 0 10px rgba(120,160,255,0.45),
     0 0 22px rgba(100,140,255,0.25);
   font-weight:600;
-}
-
-.tag--archived{
-  background:#161b25;
-  border:1px solid rgba(160,170,190,0.35);
-  color:#a8b0c4;
 }
 
 .actions{
