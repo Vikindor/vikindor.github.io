@@ -2,6 +2,7 @@
   "header": {
     "role": "Automation QA",
     "stack": "Java • Selenide • Appium • Web • API • Mobile",
+    "hint": "Try clicking the background :)",
     "links": {
       "mail": "Email",
       "discord": "Discord"
@@ -9,7 +10,6 @@
   },
   "footer": {
     "privacyPolicy": "Privacy Policy",
-    "oldVersion": "Old version",
     "viewSource": "View source"
   },
   "sections": {
