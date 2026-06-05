@@ -1,6 +1,47 @@
 (async () => {
-  const cards = document.querySelectorAll('.card[data-stars], .card[data-installs]');
+  const cards = document.querySelectorAll('.card[data-stars], .card[data-installs], .card[data-release]');
   if (!cards.length) return;
+
+  const formatDate = (date) => {
+    const parsed = new Date(`${date}T00:00:00`);
+    if (Number.isNaN(parsed.getTime())) return date;
+
+    return new Intl.DateTimeFormat('en', {
+      month: 'short',
+      year: 'numeric'
+    }).format(parsed);
+  };
+
+  const ensureFooter = (card) => {
+    let footer = card.querySelector('.card-footer');
+    if (!footer) {
+      footer = document.createElement('div');
+      footer.className = 'card-footer';
+      card.appendChild(footer);
+    }
+
+    let release = footer.querySelector('.release-date');
+    if (!release && card.dataset.release) {
+      release = document.createElement('div');
+      release.className = 'release-date';
+      release.title = 'Release date';
+      release.textContent = formatDate(card.dataset.release);
+      footer.appendChild(release);
+    }
+
+    let metrics = footer.querySelector('.meta-metrics');
+    if (!metrics) {
+      metrics = document.createElement('div');
+      metrics.className = 'meta-metrics';
+      footer.appendChild(metrics);
+    }
+
+    return metrics;
+  };
+
+  for (const card of cards) {
+    ensureFooter(card);
+  }
 
   let data;
   try {
@@ -17,17 +58,23 @@
 
     const stars = data[id].stars;
     const installs = data[id].installs?.total;
+    const metrics = ensureFooter(card);
 
-    if (!(Number.isFinite(stars) && stars > 0) &&
-        !(Number.isFinite(installs) && installs > 0)) {
-      continue;
-    }
+    if (Number.isFinite(installs) && installs > 0 && card.hasAttribute('data-installs')) {
+      const installsEl = document.createElement('div');
+      installsEl.className = 'installs';
+      installsEl.title = 'Total installs (GreasyFork + OpenUserJS)';
 
-    let metrics = card.querySelector('.meta-metrics');
-    if (!metrics) {
-      metrics = document.createElement('div');
-      metrics.className = 'meta-metrics';
-      card.querySelector('.meta')?.appendChild(metrics);
+      const icon = document.createElement('img');
+      icon.src = 'icons/install_icon.png';
+      icon.alt = '';
+      icon.className = 'icon-installs';
+
+      const label = document.createElement('span');
+      label.textContent = `Installs: ${installs.toLocaleString()}`;
+
+      installsEl.append(icon, label);
+      metrics.appendChild(installsEl);
     }
 
     if (Number.isFinite(stars) && stars > 0 && card.hasAttribute('data-stars')) {
@@ -35,25 +82,14 @@
       starsEl.className = 'stars';
       starsEl.title = 'GitHub stars';
 
-      starsEl.innerHTML = `
-        <span>⭐</span>
-        <span>${stars.toLocaleString()}</span>
-      `;
+      const icon = document.createElement('span');
+      icon.textContent = '⭐';
 
+      const label = document.createElement('span');
+      label.textContent = stars.toLocaleString();
+
+      starsEl.append(icon, label);
       metrics.appendChild(starsEl);
-    }
-
-    if (Number.isFinite(installs) && installs > 0 && card.hasAttribute('data-installs')) {
-      const installsEl = document.createElement('div');
-      installsEl.className = 'installs';
-      installsEl.title = 'Total installs (GreasyFork + OpenUserJS)';
-
-      installsEl.innerHTML = `
-        <img src="icons/install_icon.png" class="icon-installs">
-        <span>Installs: ${installs.toLocaleString()}</span>
-      `;
-
-      metrics.appendChild(installsEl);
     }
   }
 })();
