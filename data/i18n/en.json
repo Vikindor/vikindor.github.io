@@ -15,12 +15,13 @@
   "sections": {
     "about": "ABOUT",
     "portfolio": "PORTFOLIO",
-    "sideProjects": "PET PROJECTS",
+    "petProjects": "PET PROJECTS",
     "devTools": "Dev Tools",
     "apps": "Apps",
     "system": "System",
     "browserAddons": "Browser Addons",
-    "browserScripts": "Browser Scripts"
+    "browserScripts": "Browser Scripts",
+    "archive": "Archive"
   },
   "about": {
     "text": "QA engineer with experience in manual and automated testing of web and mobile applications. Automation in Java: UI, API, and mobile tests using JUnit 5, Selenide, Appium, and REST Assured. Familiar with Allure, CI pipelines, and Git."
@@ -31,14 +32,22 @@
       "description": "Enterprise-grade multi-layer test automation framework covering the same product across API, Web UI, and Android platforms. Designed as a multi-module Gradle project with unified reporting, CI integration, and environment-agnostic execution model."
     }
   },
-  "sideProjects": {
+  "petProjects": {
     "intro": [
-      "• Little tools for everyday problems",
-      "• Some are practical, some are just experiments",
+      "• Small independent projects shaped by curiosity",
+      "• Some solve practical problems, others explore new ideas",
       "• No ads, no tracking, no analytics"
     ]
   },
   "projects": {
+    "twitchCampaigns": {
+      "title": "Twitch Campaigns",
+      "description": "GitHub Actions app that tracks Twitch Drops and posts updates to Telegram"
+    },
+    "omnibeat": {
+      "title": "OmniBeat",
+      "description": "An open-source Android internet radio player built for modern online stations"
+    },
     "allureTemplates": {
       "title": "Allure Report - HTTP Templates",
       "description": "Custom FreeMarker templates for improved Request/Response rendering in Allure Report"
@@ -82,10 +91,6 @@
     "rutube": {
       "title": "Rutube - Block Autoplay",
       "description": "Userscript that blocks video autoplay on Rutube and embeds"
-    },
-    "twitchCampaigns": {
-      "title": "Twitch Campaigns",
-      "description": "GitHub Actions app that tracks Twitch Drops and posts updates to Telegram"
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",

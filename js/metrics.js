@@ -66,9 +66,9 @@
       installsEl.title = 'Total installs (GreasyFork + OpenUserJS)';
 
       const icon = document.createElement('img');
-      icon.src = 'icons/install_icon.png';
+      icon.src = 'icons/download.png';
       icon.alt = '';
-      icon.className = 'icon-installs';
+      icon.className = 'icon-metric';
 
       const label = document.createElement('span');
       label.textContent = `Installs: ${installs.toLocaleString()}`;
@@ -82,8 +82,10 @@
       starsEl.className = 'stars';
       starsEl.title = 'GitHub stars';
 
-      const icon = document.createElement('span');
-      icon.textContent = '⭐';
+      const icon = document.createElement('img');
+      icon.src = 'icons/star.png';
+      icon.alt = '';
+      icon.className = 'icon-metric';
 
       const label = document.createElement('span');
       label.textContent = stars.toLocaleString();

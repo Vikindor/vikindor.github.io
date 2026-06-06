@@ -15,12 +15,13 @@
   "sections": {
     "about": "ОБО МНЕ",
     "portfolio": "ПОРТФОЛИО",
-    "sideProjects": "PET-ПРОЕКТЫ",
+    "petProjects": "ПЕТ-ПРОЕКТЫ",
     "devTools": "Инструменты для разработки",
     "apps": "Приложения",
     "system": "Система",
     "browserAddons": "Аддоны для браузера",
-    "browserScripts": "Скрипты для браузера"
+    "browserScripts": "Скрипты для браузера",
+    "archive": "Архив"
   },
   "about": {
     "text": "QA-инженер с опытом ручного и автоматизированного тестирования веб- и мобильных приложений. Автоматизация на Java: UI-, API-, Mobile-автотесты (JUnit 5, Selenide, Appium, REST Assured), работа с Allure, CI и Git."
@@ -31,14 +32,22 @@
       "description": "Фреймворк автотестирования, который проверяет один продукт сразу на нескольких уровнях: API, Web UI и Android. Собран как многомодульный Gradle-проект с общими отчётами, CI-интеграцией и независимым от окружения запуском."
     }
   },
-  "sideProjects": {
+  "petProjects": {
     "intro": [
-      "• Небольшие инструменты для повседневных задач",
-      "• Часть проектов — ради экспериментов",
+      "• Небольшие независимые проекты, выросшие из любопытства",
+      "• Что-то решает конкретные задачи, что-то просто проверяет идеи",
       "• Без рекламы, трекеров и аналитики"
     ]
   },
   "projects": {
+    "twitchCampaigns": {
+      "title": "Twitch Campaigns",
+      "description": "Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует обновления в Telegram"
+    },
+    "omnibeat": {
+      "title": "OmniBeat",
+      "description": "Опенсорсный Android-плеер для современных онлайн-радиостанций"
+    },
     "allureTemplates": {
       "title": "Allure Report - HTTP Templates",
       "description": "Кастомные FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report"
@@ -82,10 +91,6 @@
     "rutube": {
       "title": "Rutube - Block Autoplay",
       "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах"
-    },
-    "twitchCampaigns": {
-      "title": "Twitch Campaigns",
-      "description": "Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует обновления в Telegram"
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",

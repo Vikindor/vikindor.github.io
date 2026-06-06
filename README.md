@@ -37,7 +37,6 @@ data/
   projects.json             # Metrics sources configuration
 js/                         # JavaScript files
 icons/                      # UI icons
-images/                     # Images and assets
 ```
 
 ## ℹ️ Notes

@@ -2,11 +2,11 @@
   "todoist-test-automation": {
     "github": "Vikindor/todoist-test-automation"
   },
-  "allure-report-templates": {
-    "github": "Vikindor/allure-report-templates"
+  "omnibeat": {
+    "github": "Vikindor/omnibeat"
   },
-  "selenoid-github-action": {
-    "github": "Vikindor/selenoid-github-action"
+  "twitch-campaigns": {
+    "github": "Vikindor/twitch-campaigns"
   },
   "disable-edge-updates": {
     "github": "Vikindor/disable-edge-updates"
@@ -47,8 +47,11 @@
     "greasyfork": "https://api.greasyfork.org/en/scripts/544729.json",
     "openuserjs": "https://openuserjs.org/meta/Vikindor/Rutube_-_Block_Autoplay.meta.json"
   },
-  "twitchCampaigns": {
-    "github": "Vikindor/twitch-campaigns"
+  "allure-report-templates": {
+    "github": "Vikindor/allure-report-templates"
+  },
+  "selenoid-github-action": {
+    "github": "Vikindor/selenoid-github-action"
   },
   "peaktoday": {
     "github": "Vikindor/peaktoday"
