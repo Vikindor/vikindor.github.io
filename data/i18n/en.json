@@ -1,7 +1,11 @@
 {
   "header": {
-    "role": "Automation QA",
-    "stack": "Java • Selenide • Appium • Web • API • Mobile",
+    "eyebrow": {
+      "left": "Personal edition",
+      "center": "Software engineering",
+      "right": "Est. 2014"
+    },
+    "kicker": "Portfolio & open source works of",
     "links": {
       "mail": "Email",
       "discord": "Discord"
@@ -42,43 +46,43 @@
   "projects": {
     "twitchCampaigns": {
       "title": "Twitch Campaigns",
-      "description": "GitHub Actions app that tracks Twitch Drops and posts updates to Telegram"
+      "description": "GitHub Actions app that tracks Twitch Drops and posts updates to Telegram."
     },
     "omnibeat": {
       "title": "OmniBeat",
-      "description": "An open-source Android internet radio player built for modern online stations"
+      "description": "An open-source Android internet radio player built to support all modern online stations."
     },
     "allureTemplates": {
       "title": "Allure Report - HTTP Templates",
-      "description": "Custom FreeMarker templates for improved Request/Response rendering in Allure Report"
+      "description": "Custom FreeMarker templates for improved Request/Response rendering in Allure Report."
     },
     "selenoid": {
       "title": "Selenoid via Aerokube CM",
-      "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)"
+      "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)."
     },
     "edge": {
       "title": "Disable Microsoft Edge Updates",
-      "description": "Script for Windows to disable and remove Microsoft Edge auto-updates"
+      "description": "Script for Windows to disable and remove Microsoft Edge auto-updates."
     },
     "asus": {
       "title": "Remove ASUS Bloatware",
-      "description": "Script for Windows to remove ASUS bloatware and leftovers"
+      "description": "Script for Windows to remove ASUS bloatware and leftovers."
     },
     "twitchEnhancer": {
       "title": "Twitch Enhancer",
-      "description": "Modular Chrome/Firefox extension for Twitch that combines several quality-of-life improvements in one place"
+      "description": "Modular Chrome/Firefox extension for Twitch that combines several quality-of-life improvements in one place."
     },
     "githubShortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
-      "description": "Userscript that extends GitHub navigation with a customizable header toolbar and unified shortcuts"
+      "description": "Userscript that extends GitHub navigation with a customizable header toolbar and unified shortcuts."
     },
     "twitchKeepActive": {
       "title": "Twitch - Keep Tab Active",
-      "description": "Userscript that prevents Twitch from auto-pausing when the tab is inactive and resumes playback after interruptions"
+      "description": "Userscript that prevents Twitch from auto-pausing when the tab is inactive and resumes playback after interruptions."
     },
     "twitchToggleQuality": {
       "title": "Twitch - Toggle Video Quality",
-      "description": "Userscript that toggles stream quality between the lowest available and a preferred resolution"
+      "description": "Userscript that toggles stream quality between the lowest available and a preferred resolution."
     },
     "twitchLanguage": {
       "title": "Twitch - Show Stream Language",
@@ -86,11 +90,11 @@
     },
     "twitchSort": {
       "title": "Twitch - Force sort Viewers High to Low",
-      "description": "Userscript that auto-sorts Twitch channels by viewer count"
+      "description": "Userscript that auto-sorts Twitch channels by viewer count."
     },
     "rutube": {
       "title": "Rutube - Block Autoplay",
-      "description": "Userscript that blocks video autoplay on Rutube and embeds"
+      "description": "Userscript that blocks video autoplay on Rutube and embeds."
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",

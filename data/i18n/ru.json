@@ -1,7 +1,11 @@
 {
   "header": {
-    "role": "Automation QA",
-    "stack": "Java • Selenide • Appium • Web • API • Mobile",
+    "eyebrow": {
+      "left": "Персональное издание",
+      "center": "Software engineering",
+      "right": "С 2014"
+    },
+    "kicker": "Портфолио и open-source проекты",
     "links": {
       "mail": "Почта",
       "discord": "Discord"
@@ -42,43 +46,43 @@
   "projects": {
     "twitchCampaigns": {
       "title": "Twitch Campaigns",
-      "description": "Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует обновления в Telegram"
+      "description": "Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует обновления в Telegram."
     },
     "omnibeat": {
       "title": "OmniBeat",
-      "description": "Опенсорсный Android-плеер для современных онлайн-радиостанций"
+      "description": "Open-source Android-плеер, поддерживающий все современные онлайн-радиостанции."
     },
     "allureTemplates": {
       "title": "Allure Report - HTTP Templates",
-      "description": "Кастомные FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report"
+      "description": "Кастомные FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report."
     },
     "selenoid": {
       "title": "Selenoid via Aerokube CM",
-      "description": "Запуск локального Selenoid на GitHub-hosted раннерах с использованием Aerokube CM (composite action)"
+      "description": "Запуск локального Selenoid на GitHub-hosted раннерах с использованием Aerokube CM (composite action)."
     },
     "edge": {
       "title": "Disable Microsoft Edge Updates",
-      "description": "Скрипт для Windows, отключающий и удаляющий автоматические обновления Microsoft Edge"
+      "description": "Скрипт для Windows, отключающий и удаляющий автоматические обновления Microsoft Edge."
     },
     "asus": {
       "title": "Remove ASUS Bloatware",
-      "description": "Скрипт для Windows, который удаляет навязанный ASUS софт и оставшиеся после него хвосты"
+      "description": "Скрипт для Windows, который удаляет навязанный ASUS софт и оставшиеся после него хвосты."
     },
     "twitchEnhancer": {
       "title": "Twitch Enhancer",
-      "description": "Модульное расширение для Chrome/Firefox с набором полезных улучшений для Twitch"
+      "description": "Модульное расширение для Chrome/Firefox с набором полезных улучшений для Twitch."
     },
     "githubShortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
-      "description": "Скрипт, который расширяет навигацию на GitHub: добавляет настраиваемую панель в шапке и единые горячие клавиши"
+      "description": "Скрипт, который расширяет навигацию на GitHub: добавляет настраиваемую панель в шапке и единые горячие клавиши."
     },
     "twitchKeepActive": {
       "title": "Twitch - Keep Tab Active",
-      "description": "Скрипт, который не даёт Twitch автоматически ставить стрим на паузу при неактивной вкладке и возобновляет воспроизведение после сбоев"
+      "description": "Скрипт, который не даёт Twitch автоматически ставить стрим на паузу при неактивной вкладке и возобновляет воспроизведение после сбоев."
     },
     "twitchToggleQuality": {
       "title": "Twitch - Toggle Video Quality",
-      "description": "Скрипт, который переключает качество стрима между минимально доступным и предпочтительным разрешением"
+      "description": "Скрипт, который переключает качество стрима между минимально доступным и предпочтительным разрешением."
     },
     "twitchLanguage": {
       "title": "Twitch - Show Stream Language",
@@ -86,11 +90,11 @@
     },
     "twitchSort": {
       "title": "Twitch - Force sort Viewers High to Low",
-      "description": "Скрипт, который автоматически сортирует каналы по количеству зрителей по убыванию"
+      "description": "Скрипт, который автоматически сортирует каналы по количеству зрителей по убыванию."
     },
     "rutube": {
       "title": "Rutube - Block Autoplay",
-      "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах"
+      "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах."
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",
