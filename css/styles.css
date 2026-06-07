@@ -631,7 +631,7 @@ button{
   display:inline-flex;
   align-items:center;
   gap:6px;
-  padding:6px 14px;
+  padding:8px 14px 4px;
   border:2px solid var(--ink);
   background:transparent;
   color:var(--ink);
@@ -643,6 +643,10 @@ button{
   text-transform:uppercase;
   transition:background .14s, color .14s, border-color .14s;
   white-space:nowrap;
+}
+
+.btn .icon-badge{
+  transform:translateY(-2px);
 }
 
 .btn:hover{
