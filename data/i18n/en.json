@@ -46,7 +46,7 @@
   "projects": {
     "twitchCampaigns": {
       "title": "Twitch Campaigns",
-      "description": "GitHub Actions app that tracks Twitch Drops and posts updates to Telegram."
+      "description": "\uD83D\uDFE2 Live: GitHub Actions app that tracks Twitch Drops and posts updates to Telegram."
     },
     "omnibeat": {
       "title": "OmniBeat",

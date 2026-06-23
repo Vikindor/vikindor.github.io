@@ -46,7 +46,7 @@
   "projects": {
     "twitchCampaigns": {
       "title": "Twitch Campaigns",
-      "description": "Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует обновления в Telegram."
+      "description": "\uD83D\uDFE2 Активно: Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует обновления в Telegram."
     },
     "omnibeat": {
       "title": "OmniBeat",
@@ -54,7 +54,7 @@
     },
     "allureTemplates": {
       "title": "Allure Report - HTTP Templates",
-      "description": "Кастомные FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report."
+      "description": "FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report."
     },
     "selenoid": {
       "title": "Selenoid via Aerokube CM",
