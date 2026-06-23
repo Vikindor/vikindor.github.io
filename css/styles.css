@@ -470,8 +470,8 @@ button{
 .card--archived::before{
   content:"ARCHIVED";
   position:absolute;
-  right:20px;
-  bottom:175px;
+  right:30px;
+  bottom:200px;
   z-index:0;
   padding:5px 12px;
   border:2px solid rgba(130, 45, 33, .42);
