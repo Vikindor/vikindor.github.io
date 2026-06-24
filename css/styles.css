@@ -340,6 +340,15 @@ button{
   border-top:4px solid var(--ink);
 }
 
+.section-title{
+  margin:38px 0 14px;
+  color:var(--ink-soft);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+}
+
 .section-flag{
   display:grid;
   grid-template-columns:1fr auto 1fr;
@@ -392,6 +401,14 @@ button{
   padding:34px 52px 32px;
   border-top:4px solid var(--red);
   animation:fadeUp .6s ease .1s both;
+}
+
+.portfolio-lead p{
+  max-width:62ch;
+  margin-bottom:24px;
+  font-size:1.05rem;
+  font-style:italic;
+  line-height:1.75;
 }
 
 .projects-grid{
@@ -532,23 +549,6 @@ button{
   color:var(--ink-mid);
   font-size:.92rem;
   line-height:1.65;
-}
-
-.portfolio-lead p{
-  max-width:62ch;
-  margin-bottom:24px;
-  font-size:1.05rem;
-  font-style:italic;
-  line-height:1.75;
-}
-
-.section-title{
-  margin:38px 0 14px;
-  color:var(--ink-soft);
-  font-size:.72rem;
-  font-weight:700;
-  letter-spacing:.24em;
-  text-transform:uppercase;
 }
 
 .meta{
