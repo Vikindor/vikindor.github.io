@@ -3,7 +3,9 @@
   if (!cards.length) return;
 
   const formatDate = (date) => {
-    const parsed = new Date(`${date}T00:00:00`);
+    const [day, month, year] = date.split('-').map(Number);
+    const parsed = new Date(year, month - 1, day);
+
     if (Number.isNaN(parsed.getTime())) return date;
 
     return new Intl.DateTimeFormat('en', {
