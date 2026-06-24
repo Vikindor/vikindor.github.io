@@ -52,14 +52,6 @@
       "title": "OmniBeat",
       "description": "An open-source Android internet radio player built to support all modern online stations."
     },
-    "allureTemplates": {
-      "title": "Allure Report - HTTP Templates",
-      "description": "Custom FreeMarker templates for improved Request/Response rendering in Allure Report."
-    },
-    "selenoid": {
-      "title": "Selenoid via Aerokube CM",
-      "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)."
-    },
     "edge": {
       "title": "Disable Microsoft Edge Updates",
       "description": "Script for Windows to disable and remove Microsoft Edge auto-updates."
@@ -70,7 +62,11 @@
     },
     "twitchEnhancer": {
       "title": "Twitch Enhancer",
-      "description": "Modular Chrome/Firefox extension for Twitch that combines several quality-of-life improvements in one place."
+      "description": "Chrome/Firefox extension for Twitch that combines several quality-of-life improvements in one place."
+    },
+    "exodion": {
+      "title": "Exodion",
+      "description": "Chrome/Firefox extension that brings Exodus Privacy tracker data directly into Google Play app pages."
     },
     "githubShortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
@@ -95,6 +91,14 @@
     "rutube": {
       "title": "Rutube - Block Autoplay",
       "description": "Userscript that blocks video autoplay on Rutube and embeds."
+    },
+    "allureTemplates": {
+      "title": "Allure Report - HTTP Templates",
+      "description": "Custom FreeMarker templates for improved Request/Response rendering in Allure Report."
+    },
+    "selenoid": {
+      "title": "Selenoid via Aerokube CM",
+      "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)."
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",

@@ -17,6 +17,9 @@
   "twitch-enhancer-extension": {
     "github": "Vikindor/twitch-enhancer-extension"
   },
+  "exodion": {
+    "github": "Vikindor/exodion"
+  },
   "github-header-shortcuts": {
     "github": "Vikindor/github-header-shortcuts",
     "greasyfork": "https://api.greasyfork.org/scripts/553502.json",

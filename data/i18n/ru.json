@@ -46,19 +46,11 @@
   "projects": {
     "twitchCampaigns": {
       "title": "Twitch Campaigns",
-      "description": "\uD83D\uDFE2 Активно: Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует обновления в Telegram."
+      "description": "\uD83D\uDFE2 Live: Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует их в Telegram."
     },
     "omnibeat": {
       "title": "OmniBeat",
       "description": "Open-source Android-плеер, поддерживающий все современные онлайн-радиостанции."
-    },
-    "allureTemplates": {
-      "title": "Allure Report - HTTP Templates",
-      "description": "FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report."
-    },
-    "selenoid": {
-      "title": "Selenoid via Aerokube CM",
-      "description": "Запуск локального Selenoid на GitHub-hosted раннерах с использованием Aerokube CM (composite action)."
     },
     "edge": {
       "title": "Disable Microsoft Edge Updates",
@@ -70,7 +62,11 @@
     },
     "twitchEnhancer": {
       "title": "Twitch Enhancer",
-      "description": "Модульное расширение для Chrome/Firefox с набором полезных улучшений для Twitch."
+      "description": "Расширение для Chrome/Firefox с набором полезных улучшений для Twitch."
+    },
+    "exodion": {
+      "title": "Exodion",
+      "description": "Расширение для Chrome/Firefox, выводящее данные о трекерах из Exodus Privacy на страницы в Google Play."
     },
     "githubShortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
@@ -95,6 +91,14 @@
     "rutube": {
       "title": "Rutube - Block Autoplay",
       "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах."
+    },
+    "allureTemplates": {
+      "title": "Allure Report - HTTP Templates",
+      "description": "FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report."
+    },
+    "selenoid": {
+      "title": "Selenoid via Aerokube CM",
+      "description": "Запуск локального Selenoid на GitHub-hosted раннерах с использованием Aerokube CM (composite action)."
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",
