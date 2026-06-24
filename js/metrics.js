@@ -1,5 +1,5 @@
 (async () => {
-  const cards = document.querySelectorAll('.card[data-stars], .card[data-installs], .card[data-release]');
+  const cards = document.querySelectorAll('.card[data-stars], .card[data-installs], .card[data-manual-installs], .card[data-release]');
   if (!cards.length) return;
 
   const formatDate = (date) => {
@@ -57,13 +57,17 @@
     if (!id || !data[id]) continue;
 
     const stars = data[id].stars;
-    const installs = data[id].installs?.total;
+    const manualInstalls = Number(card.dataset.manualInstalls);
+    const installs = Number.isFinite(manualInstalls)
+      ? manualInstalls
+      : data[id].installs?.total;
     const metrics = ensureFooter(card);
 
-    if (Number.isFinite(installs) && installs > 0 && card.hasAttribute('data-installs')) {
+    if (Number.isFinite(installs) && installs > 0 &&
+        (card.hasAttribute('data-installs') || card.hasAttribute('data-manual-installs'))) {
       const installsEl = document.createElement('div');
       installsEl.className = 'installs';
-      installsEl.title = 'Total installs (GreasyFork + OpenUserJS)';
+      installsEl.title = 'Total installs from all sources';
 
       const icon = document.createElement('img');
       icon.src = 'icons/download.png';
