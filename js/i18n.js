@@ -3,6 +3,7 @@
   const langMenu = document.querySelector("[data-lang-menu]");
   const langToggle = document.querySelector("[data-lang-toggle]");
   const langPopup = document.querySelector("[data-lang-popup]");
+  let currentDict;
 
   function getByPath(obj, path) {
     return path.split(".").reduce((acc, key) => acc[key], obj);
@@ -15,15 +16,23 @@
     langPopup.hidden = !isOpen;
   }
 
+  function applyTranslations(dict) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      el.textContent = getByPath(dict, el.dataset.i18n);
+    });
+
+    document.querySelectorAll("[data-i18n-title]").forEach(el => {
+      el.title = getByPath(dict, el.dataset.i18nTitle);
+    });
+  }
+
   async function loadLang(lang) {
     const res = await fetch(`data/i18n/${lang}.json`);
     const dict = await res.json();
 
+    currentDict = dict;
     document.documentElement.lang = lang;
-
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-      el.textContent = getByPath(dict, el.dataset.i18n);
-    });
+    applyTranslations(dict);
 
     document.querySelectorAll("[data-href-en]").forEach(el => {
       const key = `href${lang[0].toUpperCase()}${lang.slice(1)}`;
@@ -41,6 +50,12 @@
   }
 
   const initialLang = localStorage.getItem(LANG_KEY) || "en";
+  window.applyI18n = () => {
+    if (currentDict) {
+      applyTranslations(currentDict);
+    }
+  };
+
   void loadLang(initialLang);
 
   document.addEventListener("click", e => {

@@ -7,14 +7,8 @@
     },
     "kicker": "Portfolio & open source works of",
     "links": {
-      "mail": "Email",
-      "discord": "Discord"
+      "mail": "Email"
     }
-  },
-  "footer": {
-    "privacyPolicy": "Privacy Policy",
-    "oldVersion": "Old edition",
-    "viewSource": "View source"
   },
   "sections": {
     "about": "ABOUT",
@@ -98,19 +92,27 @@
     },
     "selenoid": {
       "title": "Selenoid via Aerokube CM",
-      "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action)."
+      "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action).",
+      "marketplace": "Marketplace"
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",
-      "description": "Browser-based map rotation timer for Peak game. No longer maintained."
+      "description": "Browser-based map rotation timer for Peak game. No longer maintained.",
+      "webPage": "Web page"
     },
     "peaktodayAndroid": {
       "title": "Peak Today (Android)",
       "description": "Minimalist Android map rotation timer for Peak game. No longer maintained."
     }
   },
-  "common": {
-    "marketplace": "Marketplace",
-    "webPage": "Web page"
+  "metrics": {
+    "installs": "Installs:",
+    "installsTitle": "Total installs from all sources",
+    "starsTitle": "GitHub stars"
+  },
+  "footer": {
+    "privacyPolicy": "Privacy Policy",
+    "oldVersion": "Old edition",
+    "viewSource": "Source code"
   }
 }

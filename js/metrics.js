@@ -69,7 +69,7 @@
         (card.hasAttribute('data-installs') || card.hasAttribute('data-manual-installs'))) {
       const installsEl = document.createElement('div');
       installsEl.className = 'installs';
-      installsEl.title = 'Total installs from all sources';
+      installsEl.dataset.i18nTitle = 'metrics.installsTitle';
 
       const icon = document.createElement('img');
       icon.src = 'icons/download.png';
@@ -77,16 +77,19 @@
       icon.className = 'icon-metric';
 
       const label = document.createElement('span');
-      label.textContent = `Installs: ${installs.toLocaleString()}`;
+      label.dataset.i18n = 'metrics.installs';
 
-      installsEl.append(icon, label);
+      const value = document.createElement('span');
+      value.textContent = installs.toLocaleString();
+
+      installsEl.append(icon, label, value);
       metrics.appendChild(installsEl);
     }
 
     if (Number.isFinite(stars) && stars > 0 && card.hasAttribute('data-stars')) {
       const starsEl = document.createElement('div');
       starsEl.className = 'stars';
-      starsEl.title = 'GitHub stars';
+      starsEl.dataset.i18nTitle = 'metrics.starsTitle';
 
       const icon = document.createElement('img');
       icon.src = 'icons/star.png';
@@ -100,4 +103,6 @@
       metrics.appendChild(starsEl);
     }
   }
+
+  window.applyI18n?.();
 })();
