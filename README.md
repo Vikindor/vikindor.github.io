@@ -11,7 +11,7 @@ vikindor.github.io
 Source code of my personal website containing portfolio and pet projects, hosted on GitHub Pages.  
 The site is lightweight and framework-free, focusing on clean markup, simple structure, and maintainability.
 
-## 🌐 Live
+## 🌐 Link
 
 **https://vikindor.github.io/**
 
