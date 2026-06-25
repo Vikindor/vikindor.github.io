@@ -456,16 +456,16 @@ button{
   background:var(--paper-warm);
 }
 
-.card--accent{
+.card--new{
   border-top:3px solid var(--red);
   background:var(--red-dim);
 }
 
-.card--accent:hover{
+.card--new:hover{
   background:rgba(181,36,28,.12);
 }
 
-.card--editorial::before{
+.card--ribbon::before{
   content:"";
   position:absolute;
   top:0;
