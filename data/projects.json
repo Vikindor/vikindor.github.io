@@ -50,6 +50,9 @@
     "greasyfork": "https://api.greasyfork.org/en/scripts/544729.json",
     "openuserjs": "https://openuserjs.org/meta/Vikindor/Rutube_-_Block_Autoplay.meta.json"
   },
+  "android-vector-drawable-xml-to-svg-converter": {
+    "github": "Vikindor/android-vector-drawable-xml-to-svg-converter"
+  },
   "allure-report-templates": {
     "github": "Vikindor/allure-report-templates"
   },

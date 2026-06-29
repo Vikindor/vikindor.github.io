@@ -86,6 +86,10 @@
       "title": "Rutube - Block Autoplay",
       "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах."
     },
+    "android-vector-drawable-xml-to-svg-converter": {
+      "title": "Android Vector Drawable XML to SVG Converter",
+      "description": "Компактный Node.js-скрипт для конвертации Android Vector Drawable XML-файлов в SVG."
+    },
     "allureTemplates": {
       "title": "Allure Report - HTTP Templates",
       "description": "FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report."
