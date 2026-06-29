@@ -72,7 +72,7 @@
       installsEl.dataset.i18nTitle = 'metrics.installsTitle';
 
       const icon = document.createElement('img');
-      icon.src = 'icons/download.png';
+      icon.src = 'images/download.png';
       icon.alt = '';
       icon.className = 'icon-metric';
 
@@ -92,7 +92,7 @@
       starsEl.dataset.i18nTitle = 'metrics.starsTitle';
 
       const icon = document.createElement('img');
-      icon.src = 'icons/star.png';
+      icon.src = 'images/star.png';
       icon.alt = '';
       icon.className = 'icon-metric';
 
