@@ -33,24 +33,33 @@
                     <img src="images/gitlab_logo.png" alt="GitLab logo" class="icon-badge">
                     GitLab
                 </a>
-                <a class="badge" href="mailto:vikindor@gmail.com">
-                    <img src="images/mail_icon.png" alt="Mail icon" class="icon-badge">
-                    <span data-i18n="header.links.mail"></span>
-                </a>
+                <div class="badge-popover" data-popup data-copy-value="vikindor@gmail.com">
+                    <button class="badge badge-button" type="button" data-popup-toggle aria-expanded="false">
+                        <img src="images/mail_icon.png" alt="Mail icon" class="icon-badge">
+                        <span data-i18n="header.links.mail"></span>
+                    </button>
+
+                    <div class="badge-popover-panel" data-popup-panel hidden>
+                        <span class="badge-popover-value">vikindor@gmail.com</span>
+                        <button class="badge-popover-copy" type="button" data-popup-copy>
+                            <img alt="Copy icon" class="icon-badge" data-popup-copy-icon>
+                        </button>
+                    </div>
+                </div>
                 <a class="badge" href="https://t.me/vikindor" target="_blank" rel="noopener">
                     <img src="images/telegram_logo.png" alt="Telegram logo" class="icon-badge">
                     Telegram
                 </a>
-                <div class="badge-popover" data-discord>
-                    <button class="badge badge-button" type="button" data-discord-toggle aria-expanded="false">
+                <div class="badge-popover" data-popup data-copy-value="Vikindor">
+                    <button class="badge badge-button" type="button" data-popup-toggle aria-expanded="false">
                         <img src="images/discord_logo.png" alt="Discord icon" class="icon-badge">
                         Discord
                     </button>
 
-                    <div class="badge-popover-panel" data-discord-panel hidden>
+                    <div class="badge-popover-panel" data-popup-panel hidden>
                         <span class="badge-popover-value">Vikindor</span>
-                        <button class="badge-popover-copy" type="button" data-discord-copy>
-                            <img alt="Copy icon" class="icon-badge" data-discord-copy-icon>
+                        <button class="badge-popover-copy" type="button" data-popup-copy>
+                            <img alt="Copy icon" class="icon-badge" data-popup-copy-icon>
                         </button>
                     </div>
                 </div>
@@ -643,7 +652,7 @@
 </footer>
 
 <script src="js/i18n.js"></script>
-<script src="js/discord.js"></script>
+<script src="js/popup.js"></script>
 <script src="js/metrics.js"></script>
 </body>
 </html>
