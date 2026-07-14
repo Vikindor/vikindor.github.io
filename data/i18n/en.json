@@ -107,6 +107,10 @@
     "peaktodayAndroid": {
       "title": "Peak Today (Android)",
       "description": "Minimalist Android map rotation timer for Peak game. No longer maintained."
+    },
+    "twitchadsolutions-vaft-plus-keep-tab-active": {
+      "title": "VAFT + Keep Tab Active",
+      "description": "Userscript for Twitch that combines ad blocking with keeping inactive tabs from auto-pausing."
     }
   },
   "metrics": {

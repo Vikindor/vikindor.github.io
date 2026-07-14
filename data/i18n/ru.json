@@ -107,6 +107,10 @@
     "peaktodayAndroid": {
       "title": "Peak Today (Android)",
       "description": "Минималистичный Android-таймер ротации карт для игры Peak. Более не поддерживается."
+    },
+    "twitchadsolutions-vaft-plus-keep-tab-active": {
+      "title": "VAFT + Keep Tab Active",
+      "description": "Скрипт, который блокирует рекламу и не даёт неактивным вкладкам ставить стрим на паузу."
     }
   },
   "metrics": {
