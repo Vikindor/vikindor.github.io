@@ -68,7 +68,7 @@
     },
     "twitchKeepActive": {
       "title": "Twitch - Keep Tab Active",
-      "description": "Userscript that prevents Twitch from auto-pausing when the tab is inactive and resumes playback after interruptions."
+      "description": "Userscript that prevents Twitch from auto-pausing the inactive tab and resumes playback after interruptions."
     },
     "twitchToggleQuality": {
       "title": "Twitch - Toggle Video Quality",
