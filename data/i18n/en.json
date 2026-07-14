@@ -101,12 +101,12 @@
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",
-      "description": "Browser-based map rotation timer for Peak game. No longer maintained.",
+      "description": "Browser-based map rotation timer for Peak game.",
       "webPage": "Web page"
     },
     "peaktodayAndroid": {
       "title": "Peak Today (Android)",
-      "description": "Minimalist Android map rotation timer for Peak game. No longer maintained."
+      "description": "Minimalist Android map rotation timer for Peak game."
     },
     "twitchadsolutions-vaft-plus-keep-tab-active": {
       "title": "VAFT + Keep Tab Active",

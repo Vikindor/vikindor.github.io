@@ -101,12 +101,12 @@
     },
     "peaktodayWeb": {
       "title": "Peak Today (Web)",
-      "description": "Таймер ротации карт для игры Peak, работающий прямо в браузере. Более не поддерживается.",
+      "description": "Таймер ротации карт для игры Peak, работающий прямо в браузере.",
       "webPage": "Сайт"
     },
     "peaktodayAndroid": {
       "title": "Peak Today (Android)",
-      "description": "Минималистичный Android-таймер ротации карт для игры Peak. Более не поддерживается."
+      "description": "Минималистичный Android-таймер ротации карт для игры Peak."
     },
     "twitchadsolutions-vaft-plus-keep-tab-active": {
       "title": "VAFT + Keep Tab Active",
