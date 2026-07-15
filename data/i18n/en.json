@@ -25,7 +25,7 @@
     "text": "QA engineer with experience in manual and automated testing of web and mobile applications. Java automation across UI, API, and mobile using JUnit 5, Selenide, Appium, and REST Assured. Experience with Allure reporting, CI pipelines, and Git.\n\nOutside of work: games, music, technology, and an enduring curiosity about how things work."
   },
   "portfolio": {
-    "todoist": {
+    "todoist-test-automation": {
       "title": "Multi-Layer Test Automation Framework for Todoist app",
       "description": "Enterprise-grade multi-layer test automation framework covering the same product across API, Web UI, and Android platforms. Designed as a multi-module Gradle project with unified reporting, CI integration, and environment-agnostic execution model."
     }
@@ -38,51 +38,55 @@
     ]
   },
   "projects": {
-    "twitchCampaigns": {
-      "title": "Twitch Campaigns",
-      "description": "\uD83D\uDFE2 Live: GitHub Actions app that tracks Twitch Drops and posts updates to Telegram."
-    },
     "omnibeat": {
       "title": "OmniBeat",
       "description": "An open-source Android internet radio player built to support all modern online stations."
     },
-    "edge": {
+    "twitch-campaigns": {
+      "title": "Twitch Campaigns",
+      "description": "\uD83D\uDFE2 Live: GitHub Actions app that tracks Twitch Drops and posts updates to Telegram."
+    },
+    "windows-cleanup": {
+      "title": "Windows Cleanup",
+      "description": "Script for Windows to remove bloatware, unwanted components, and leftovers ."
+    },
+    "disable-edge-updates": {
       "title": "Disable Microsoft Edge Updates",
       "description": "Script for Windows to disable and remove Microsoft Edge auto-updates."
     },
-    "asus": {
+    "remove-asus-bloatware": {
       "title": "Remove ASUS Bloatware",
       "description": "Script for Windows to remove ASUS bloatware and leftovers."
-    },
-    "twitchEnhancer": {
-      "title": "Twitch Enhancer",
-      "description": "Chrome/Firefox extension for Twitch that combines several quality-of-life improvements in one place."
     },
     "exodion": {
       "title": "Exodion",
       "description": "Chrome/Firefox extension that brings Exodus Privacy tracker data directly into Google Play app pages."
     },
-    "githubShortcuts": {
+    "twitch-enhancer-extension": {
+      "title": "Twitch Enhancer",
+      "description": "Chrome/Firefox extension for Twitch that combines several quality-of-life improvements in one place."
+    },
+    "github-header-shortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
       "description": "Userscript that extends GitHub navigation with a customizable header toolbar and unified shortcuts."
     },
-    "twitchKeepActive": {
+    "twitch-keep-tab-active": {
       "title": "Twitch - Keep Tab Active",
       "description": "Userscript that prevents Twitch from auto-pausing the inactive tab and resumes playback after interruptions."
     },
-    "twitchToggleQuality": {
+    "twitch-toggle-video-quality": {
       "title": "Twitch - Toggle Video Quality",
       "description": "Userscript that toggles stream quality between the lowest available and a preferred resolution."
     },
-    "twitchLanguage": {
+    "twitch-show-stream-language": {
       "title": "Twitch - Show Stream Language",
       "description": "Userscript that displays a stream’s language tag like [EN], [JA], etc."
     },
-    "twitchSort": {
+    "twitch-force-sort-viewers": {
       "title": "Twitch - Force sort Viewers High to Low",
       "description": "Userscript that auto-sorts Twitch channels by viewer count."
     },
-    "rutube": {
+    "rutube-block-autoplay": {
       "title": "Rutube - Block Autoplay",
       "description": "Userscript that blocks video autoplay on Rutube and embeds."
     },
@@ -90,27 +94,27 @@
       "title": "Android Vector Drawable XML to SVG Converter",
       "description": "A compact Node.js script to convert Android Vector Drawable XML files into SVG."
     },
-    "allureTemplates": {
+    "allure-report-templates": {
       "title": "Allure Report - HTTP Templates",
       "description": "Custom FreeMarker templates for improved Request/Response rendering in Allure Report."
     },
-    "selenoid": {
+    "selenoid-github-action": {
       "title": "Selenoid via Aerokube CM",
       "description": "Start local Selenoid on GitHub-hosted runners using Aerokube CM (composite action).",
       "marketplace": "Marketplace"
     },
-    "peaktodayWeb": {
+    "twitchadsolutions-vaft-plus-keep-tab-active": {
+      "title": "VAFT + Keep Tab Active",
+      "description": "Userscript for Twitch that combines ad blocking with keeping inactive tabs from auto-pausing."
+    },
+    "peaktoday": {
       "title": "Peak Today (Web)",
       "description": "Browser-based map rotation timer for Peak game.",
       "webPage": "Web page"
     },
-    "peaktodayAndroid": {
+    "peaktoday-android": {
       "title": "Peak Today (Android)",
       "description": "Minimalist Android map rotation timer for Peak game."
-    },
-    "twitchadsolutions-vaft-plus-keep-tab-active": {
-      "title": "VAFT + Keep Tab Active",
-      "description": "Userscript for Twitch that combines ad blocking with keeping inactive tabs from auto-pausing."
     }
   },
   "metrics": {

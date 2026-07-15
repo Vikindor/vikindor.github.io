@@ -25,7 +25,7 @@
     "text": "QA-инженер с опытом ручного и автоматизированного тестирования веб- и мобильных приложений. Автоматизация на Java: UI-, API- и Mobile-тесты с использованием JUnit 5, Selenide, Appium и REST Assured. Работа с Allure, CI и Git.\n\nВне работы — игры, музыка, технологии и неизменное любопытство к тому, как всё устроено."
   },
   "portfolio": {
-    "todoist": {
+    "todoist-test-automation": {
       "title": "Фреймворк многоуровневой автоматизации тестирования сервиса Todoist",
       "description": "Фреймворк автотестирования, который проверяет один продукт сразу на нескольких уровнях: API, Web UI и Android. Собран как многомодульный Gradle-проект с общими отчётами, CI-интеграцией и независимым от окружения запуском."
     }
@@ -38,51 +38,55 @@
     ]
   },
   "projects": {
-    "twitchCampaigns": {
-      "title": "Twitch Campaigns",
-      "description": "\uD83D\uDFE2 Live: Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует их в Telegram."
-    },
     "omnibeat": {
       "title": "OmniBeat",
       "description": "Open-source Android-плеер, поддерживающий все современные онлайн-радиостанции."
     },
-    "edge": {
+    "twitch-campaigns": {
+      "title": "Twitch Campaigns",
+      "description": "\uD83D\uDFE2 Live: Приложение на GitHub Actions, которое отслеживает Twitch Drops и публикует их в Telegram."
+    },
+    "windows-cleanup": {
+      "title": "Windows Cleanup",
+      "description": "Скрипт для очистки Windows от предустановленного софта и ненужных компонентов."
+    },
+    "disable-edge-updates": {
       "title": "Disable Microsoft Edge Updates",
       "description": "Скрипт для Windows, отключающий и удаляющий автоматические обновления Microsoft Edge."
     },
-    "asus": {
+    "remove-asus-bloatware": {
       "title": "Remove ASUS Bloatware",
-      "description": "Скрипт для Windows, который удаляет навязанный ASUS софт и оставшиеся после него хвосты."
-    },
-    "twitchEnhancer": {
-      "title": "Twitch Enhancer",
-      "description": "Расширение для Chrome/Firefox с набором полезных улучшений для Twitch."
+      "description": "Скрипт для Windows, который удаляет навязанный ASUS софт и остаточные файлы."
     },
     "exodion": {
       "title": "Exodion",
       "description": "Расширение для Chrome/Firefox, выводящее данные о трекерах из Exodus Privacy на страницы в Google Play."
     },
-    "githubShortcuts": {
+    "twitch-enhancer-extension": {
+      "title": "Twitch Enhancer",
+      "description": "Расширение для Chrome/Firefox с набором полезных улучшений для Twitch."
+    },
+    "github-header-shortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
       "description": "Скрипт, который расширяет навигацию на GitHub: добавляет настраиваемую панель в шапке и единые горячие клавиши."
     },
-    "twitchKeepActive": {
+    "twitch-keep-tab-active": {
       "title": "Twitch - Keep Tab Active",
       "description": "Скрипт, который не даёт Twitch автоматически ставить стрим на паузу при неактивной вкладке и возобновляет воспроизведение после сбоев."
     },
-    "twitchToggleQuality": {
+    "twitch-toggle-video-quality": {
       "title": "Twitch - Toggle Video Quality",
       "description": "Скрипт, который переключает качество стрима между минимально доступным и предпочтительным разрешением."
     },
-    "twitchLanguage": {
+    "twitch-show-stream-language": {
       "title": "Twitch - Show Stream Language",
       "description": "Скрипт, который показывает язык стрима в виде тегов вроде [EN], [JA] и т.п."
     },
-    "twitchSort": {
+    "twitch-force-sort-viewers": {
       "title": "Twitch - Force sort Viewers High to Low",
       "description": "Скрипт, который автоматически сортирует каналы по количеству зрителей по убыванию."
     },
-    "rutube": {
+    "rutube-block-autoplay": {
       "title": "Rutube - Block Autoplay",
       "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах."
     },
@@ -90,27 +94,27 @@
       "title": "Android Vector Drawable XML to SVG Converter",
       "description": "Компактный Node.js-скрипт для конвертации Android Vector Drawable XML-файлов в SVG."
     },
-    "allureTemplates": {
+    "allure-report-templates": {
       "title": "Allure Report - HTTP Templates",
       "description": "FreeMarker шаблоны для форматирования вывода Request/Response в Allure Report."
     },
-    "selenoid": {
+    "selenoid-github-action": {
       "title": "Selenoid via Aerokube CM",
       "description": "Запуск локального Selenoid на GitHub-hosted раннерах с использованием Aerokube CM (composite action).",
       "marketplace": "Маркетплейс"
     },
-    "peaktodayWeb": {
+    "twitchadsolutions-vaft-plus-keep-tab-active": {
+      "title": "VAFT + Keep Tab Active",
+      "description": "Скрипт, который блокирует рекламу и не даёт неактивным вкладкам ставить стрим на паузу."
+    },
+    "peaktoday": {
       "title": "Peak Today (Web)",
       "description": "Таймер ротации карт для игры Peak, работающий прямо в браузере.",
       "webPage": "Сайт"
     },
-    "peaktodayAndroid": {
+    "peaktoday-android": {
       "title": "Peak Today (Android)",
       "description": "Минималистичный Android-таймер ротации карт для игры Peak."
-    },
-    "twitchadsolutions-vaft-plus-keep-tab-active": {
-      "title": "VAFT + Keep Tab Active",
-      "description": "Скрипт, который блокирует рекламу и не даёт неактивным вкладкам ставить стрим на паузу."
     }
   },
   "metrics": {

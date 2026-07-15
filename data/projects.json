@@ -8,6 +8,9 @@
   "twitch-campaigns": {
     "github": "Vikindor/twitch-campaigns"
   },
+  "windows-cleanup": {
+    "github": "Vikindor/windows-cleanup"
+  },
   "disable-edge-updates": {
     "github": "Vikindor/disable-edge-updates"
   },
@@ -59,13 +62,13 @@
   "selenoid-github-action": {
     "github": "Vikindor/selenoid-github-action"
   },
+  "twitchadsolutions-vaft-plus-keep-tab-active": {
+    "github": "Vikindor/twitchadsolutions-vaft-plus-keep-tab-active"
+  },
   "peaktoday": {
     "github": "Vikindor/peaktoday"
   },
   "peaktoday-android": {
     "github": "Vikindor/peaktoday-android"
-  },
-  "twitchadsolutions-vaft-plus-keep-tab-active": {
-    "github": "Vikindor/twitchadsolutions-vaft-plus-keep-tab-active"
   }
 }
