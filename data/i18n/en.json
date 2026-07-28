@@ -90,6 +90,10 @@
       "title": "Rutube - Block Autoplay",
       "description": "Userscript that blocks video autoplay on Rutube and embeds."
     },
+    "ai-agent-toolkit": {
+      "title": "AI Agent Toolkit",
+      "description": "Personal backup of AI agent rules, skills, and a Codex animated pet, shared for anyone to reuse or adapt."
+    },
     "android-vector-drawable-xml-to-svg-converter": {
       "title": "Android Vector Drawable XML to SVG Converter",
       "description": "A compact Node.js script to convert Android Vector Drawable XML files into SVG."

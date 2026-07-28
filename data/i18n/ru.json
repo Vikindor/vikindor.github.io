@@ -90,6 +90,10 @@
       "title": "Rutube - Block Autoplay",
       "description": "Скрипт, который блокирует автозапуск видео на Rutube и во встроенных плеерах."
     },
+    "ai-agent-toolkit": {
+      "title": "AI Agent Toolkit",
+      "description": "Личная коллекция правил и скиллов для AI-агентов, а также анимированный пет для Codex."
+    },
     "android-vector-drawable-xml-to-svg-converter": {
       "title": "Android Vector Drawable XML to SVG Converter",
       "description": "Компактный Node.js-скрипт для конвертации Android Vector Drawable XML-файлов в SVG."
