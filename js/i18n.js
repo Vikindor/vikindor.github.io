@@ -47,6 +47,9 @@
 
     localStorage.setItem(LANG_KEY, lang);
     setLangMenuOpen(false);
+    document.dispatchEvent(new CustomEvent("i18n:change", {
+      detail: { lang }
+    }));
   }
 
   const initialLang = localStorage.getItem(LANG_KEY) || "en";

@@ -120,6 +120,7 @@
   "metrics": {
     "installs": "Установки:",
     "installsTitle": "Всего установок из всех источников",
+    "releaseDateTitle": "Дата релиза",
     "starsTitle": "Звёзды GitHub"
   },
   "footer": {

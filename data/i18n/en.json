@@ -120,6 +120,7 @@
   "metrics": {
     "installs": "Installs:",
     "installsTitle": "Total installs from all sources",
+    "releaseDateTitle": "Release date",
     "starsTitle": "GitHub stars"
   },
   "footer": {

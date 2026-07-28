@@ -2,16 +2,26 @@
   const cards = document.querySelectorAll('.card[data-stars], .card[data-installs], .card[data-manual-installs], .card[data-release]');
   if (!cards.length) return;
 
-  const formatDate = (date) => {
+  const formatDate = (date, lang = document.documentElement.lang) => {
     const [day, month, year] = date.split('-').map(Number);
     const parsed = new Date(year, month - 1, day);
 
     if (Number.isNaN(parsed.getTime())) return date;
 
-    return new Intl.DateTimeFormat('en', {
+    const parts = new Intl.DateTimeFormat(lang, {
       month: 'short',
       year: 'numeric'
-    }).format(parsed);
+    }).formatToParts(parsed);
+    const monthLabel = parts.find(part => part.type === 'month')?.value;
+    const yearLabel = parts.find(part => part.type === 'year')?.value;
+
+    return monthLabel && yearLabel ? `${monthLabel} ${yearLabel}` : date;
+  };
+
+  const updateReleaseDates = (lang = document.documentElement.lang) => {
+    document.querySelectorAll('.release-date[data-release-date]').forEach(release => {
+      release.textContent = formatDate(release.dataset.releaseDate, lang);
+    });
   };
 
   const ensureFooter = (card) => {
@@ -26,7 +36,8 @@
     if (!release && card.dataset.release) {
       release = document.createElement('div');
       release.className = 'release-date';
-      release.title = 'Release date';
+      release.dataset.releaseDate = card.dataset.release;
+      release.dataset.i18nTitle = 'metrics.releaseDateTitle';
       release.textContent = formatDate(card.dataset.release);
       footer.appendChild(release);
     }
@@ -44,6 +55,10 @@
   for (const card of cards) {
     ensureFooter(card);
   }
+
+  document.addEventListener('i18n:change', event => {
+    updateReleaseDates(event.detail.lang);
+  });
 
   let data;
   try {
