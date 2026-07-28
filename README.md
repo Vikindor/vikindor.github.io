@@ -29,14 +29,15 @@ The site is lightweight and framework-free, focusing on clean markup, simple str
 index.html                  # Main portfolio page
 privacy-policy.html         # Privacy policy (EN)
 privacy-policy-ru.html      # Privacy policy (RU)
-legacy/                     # Archived previous visual version
 .github/                    # GitHub Actions workflow
 css/                        # Stylesheets
 data/
   i18n/                     # Localization files
   projects.json             # Metrics sources configuration
+fonts/                      # Locally hosted web fonts
+images/                     # Images and UI icons
 js/                         # JavaScript files
-icons/                      # UI icons
+legacy/                     # Archived previous visual version
 ```
 
 ## ℹ️ Notes
@@ -44,4 +45,3 @@ icons/                      # UI icons
 - Localization is handled via a simple client-side i18n mechanism using JSON dictionaries
 - GitHub stars and userscript install counts are fetched via GitHub Actions and stored in a static JSON Gist file
 - The previous visual version is preserved under `/legacy/`
-- No analytics, no tracking, no third-party hosted scripts
