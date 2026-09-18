@@ -26,7 +26,7 @@ The site is lightweight and framework-free, focusing on clean markup, simple str
 ## 📁 Project structure
 
 ```text
-index.html                  # Main portfolio page
+index.html                  # Main page
 privacy-policy.html         # Privacy policy (EN)
 privacy-policy-ru.html      # Privacy policy (RU)
 .github/                    # GitHub Actions workflow
