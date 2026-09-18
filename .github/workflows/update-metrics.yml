@@ -28,6 +28,7 @@ jobs:
           echo '{}' > "$OUTPUT_FILE"
 
           for ID in $(jq -r 'keys[]' "$PROJECTS_FILE"); do
+            echo "Project: $ID"
             GH_REPO=$(jq -r ".\"$ID\".github // empty" "$PROJECTS_FILE")
             GF_URL=$(jq -r ".\"$ID\".greasyfork // empty" "$PROJECTS_FILE")
             OUJS_URL=$(jq -r ".\"$ID\".openuserjs // empty" "$PROJECTS_FILE")
@@ -35,11 +36,12 @@ jobs:
             # -------- GitHub stars --------
             STARS=0
             if [ -n "$GH_REPO" ]; then
-              STARS=$(curl -s \
+              echo "Fetching GitHub stars: https://api.github.com/repos/$GH_REPO"
+              STARS=$(curl -sS \
                 -H "Authorization: Bearer $GITHUB_TOKEN" \
                 -H "Accept: application/vnd.github+json" \
                 "https://api.github.com/repos/$GH_REPO" \
-                | jq -r '.stargazers_count // 0' 2>/dev/null)
+                | jq -r '.stargazers_count // 0')
 
               [[ "$STARS" =~ ^[0-9]+$ ]] || STARS=0
             fi
@@ -51,19 +53,22 @@ jobs:
 
             if [ -n "$GF_URL" ]; then
               HAS_INSTALLS=true
-              GF=$(curl -s "$GF_URL" | jq -r '.total_installs // 0' 2>/dev/null)
+              echo "Fetching Greasy Fork installs: $GF_URL"
+              GF=$(curl -sS "$GF_URL" | jq -r '.total_installs // 0')
               [[ "$GF" =~ ^[0-9]+$ ]] || GF=0
             fi
 
             if [ -n "$OUJS_URL" ]; then
               HAS_INSTALLS=true
-              OUJS=$(curl -s "$OUJS_URL" | jq -r '.OpenUserJS.installs[0].value // 0' 2>/dev/null)
+              echo "Fetching OpenUserJS installs: $OUJS_URL"
+              OUJS=$(curl -sS "$OUJS_URL" | jq -r '.OpenUserJS.installs[0].value // 0')
               [[ "$OUJS" =~ ^[0-9]+$ ]] || OUJS=0
             fi
 
             INSTALLS_TOTAL=$((GF + OUJS))
 
             # -------- Write metrics --------
+            echo "Writing metrics: $ID"
             if [ "$HAS_INSTALLS" = true ]; then
               jq --arg id "$ID" \
                  --argjson stars "$STARS" \
