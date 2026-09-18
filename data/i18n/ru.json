@@ -60,11 +60,11 @@
     },
     "exodion": {
       "title": "Exodion",
-      "description": "Расширение для Chrome/Firefox, выводящее данные о трекерах из Exodus Privacy на страницы в Google Play."
+      "description": "Расширение для браузеров, выводящее данные о трекерах из Exodus Privacy на страницы в Google Play."
     },
     "twitch-enhancer-extension": {
       "title": "Twitch Enhancer",
-      "description": "Расширение для Chrome/Firefox с набором полезных улучшений для Twitch."
+      "description": "Расширение для браузеров с набором полезных улучшений для Twitch."
     },
     "github-header-shortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",

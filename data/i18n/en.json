@@ -60,11 +60,11 @@
     },
     "exodion": {
       "title": "Exodion",
-      "description": "Chrome/Firefox extension that brings Exodus Privacy tracker data directly into Google Play app pages."
+      "description": "Browser extension that brings Exodus Privacy tracker data directly into Google Play app pages."
     },
     "twitch-enhancer-extension": {
       "title": "Twitch Enhancer",
-      "description": "Chrome/Firefox extension for Twitch that combines several quality-of-life improvements in one place."
+      "description": "Browser extension for Twitch that combines several quality-of-life improvements in one place."
     },
     "github-header-shortcuts": {
       "title": "GitHub - Enhanced Shortcuts & Header Toolbar",
