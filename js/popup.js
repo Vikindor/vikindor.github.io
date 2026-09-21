@@ -59,7 +59,6 @@
 
     instance.copyButton.classList.remove("is-feedback");
     instance.copyIcon.src = copyIconSrc;
-    instance.copyIcon.alt = "Copy icon";
   }
 
   function showCopyFeedback(instance) {
@@ -71,7 +70,6 @@
 
     window.setTimeout(() => {
       instance.copyIcon.src = checkIconSrc;
-      instance.copyIcon.alt = "Copied";
       instance.copyButton.classList.remove("is-feedback");
     }, 180);
 
@@ -80,7 +78,6 @@
 
       window.setTimeout(() => {
         instance.copyIcon.src = copyIconSrc;
-        instance.copyIcon.alt = "Copy icon";
         instance.copyButton.classList.remove("is-feedback");
       }, 180);
 

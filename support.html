@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title data-i18n="support.pageTitle"></title>
+    <link rel="icon" type="image/png" href="images/github_logo.png">
+    <link rel="preload" href="fonts/playfair-display-normal-700-900-latin.woff2" as="font"
+          type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/support.css">
+</head>
+<body>
+<div class="wrap support-page">
+    <header class="support-header">
+        <h1 data-i18n="support.title"></h1>
+    </header>
+
+    <nav class="masthead-tools support-tools">
+        <a class="badge" href="index.html"><img src="images/back_icon.png" class="icon-badge"> <span data-i18n="support.back"></span></a>
+        <div class="lang-menu" data-lang-menu>
+            <button class="lang-button" type="button" aria-haspopup="true" aria-expanded="false" data-lang-toggle>
+                <svg class="lang-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="m5 8 6 6"></path>
+                    <path d="m4 14 6-6 2-3"></path>
+                    <path d="M2 5h12"></path>
+                    <path d="M7 2h1"></path>
+                    <path d="m22 22-5-10-5 10"></path>
+                    <path d="M14 18h6"></path>
+                </svg>
+                <svg class="lang-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </button>
+
+            <div class="lang-menu-popup" data-lang-popup hidden>
+                <button class="lang-option" type="button" data-lang="en">EN</button>
+                <button class="lang-option" type="button" data-lang="ru">RU</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="support-content">
+        <p class="support-intro" data-i18n="support.intro"></p>
+
+        <div class="support-buttons">
+            <button class="support-channel" type="button" data-copy-value="vikindor@gmail.com">
+                <img src="images/mail_icon.png" alt="" class="support-channel-icon">
+                <span class="support-channel-title" data-i18n="header.links.mail"></span>
+                <span class="support-channel-detail">vikindor@gmail.com <img src="images/copy_icon.png"
+                                                                             class="icon-badge"></span>
+                <span class="support-channel-detail support-copy-feedback" data-i18n="support.copied"></span>
+            </button>
+            <a class="support-channel" href="https://t.me/vikindor" target="_blank" rel="noopener">
+                <img src="images/telegram_logo.png" alt="" class="support-channel-icon">
+                <span class="support-channel-title">Telegram</span>
+                <span class="support-channel-detail">@vikindor <img src="images/open_new_tab.png"
+                                                                    class="icon-badge"></span>
+            </a>
+            <button class="support-channel" type="button" data-copy-value="Vikindor">
+                <img src="images/discord_logo.png" alt="" class="support-channel-icon">
+                <span class="support-channel-title">Discord</span>
+                <span class="support-channel-detail">Vikindor <img src="images/copy_icon.png" class="icon-badge"></span>
+                <span class="support-channel-detail support-copy-feedback" data-i18n="support.copied"></span>
+            </button>
+            <a class="support-channel" href="https://forms.gle/vyVaopDKaaQAL8X4A" target="_blank" rel="noopener">
+                <svg class="support-channel-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor"
+                     stroke-width="1.5" aria-hidden="true">
+                    <rect x="7" y="3" width="18" height="26" rx="1"></rect>
+                    <path d="M11 10h10M11 16h10M11 22h6"></path>
+                </svg>
+                <span class="support-channel-title" data-i18n="support.formTitle"></span>
+                <span class="support-channel-detail">Google Forms <img src="images/open_new_tab.png" class="icon-badge"></span>
+            </a>
+        </div>
+    </main>
+</div>
+<script src="js/i18n.js"></script>
+<script src="js/copy.js"></script>
+</body>
+</html>

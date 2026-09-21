@@ -127,7 +127,16 @@
     "releaseDateTitle": "Release date",
     "starsTitle": "GitHub stars"
   },
+  "support": {
+    "pageTitle": "Vikindor - Contact & Support",
+    "title": "Contact & Support",
+    "intro": "Have a question about my projects, found a problem, or want to share a suggestion? Get in touch using any of the options below.",
+    "copied": "Copied",
+    "formTitle": "Feedback form",
+    "back": "Back to main page"
+  },
   "footer": {
+    "support": "Contact & Support",
     "privacyPolicy": "Privacy Policy",
     "oldVersion": "Old edition",
     "viewSource": "Source code"
