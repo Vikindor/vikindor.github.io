@@ -1,5 +1,6 @@
 (function () {
   const LANG_KEY = "lang";
+  const isLanguagePage = document.documentElement.hasAttribute("data-lang-page");
   const langMenu = document.querySelector("[data-lang-menu]");
   const langToggle = document.querySelector("[data-lang-toggle]");
   const langPopup = document.querySelector("[data-lang-popup]");
@@ -27,6 +28,19 @@
   }
 
   async function loadLang(lang) {
+    if (isLanguagePage) {
+      localStorage.setItem(LANG_KEY, lang);
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.classList.toggle("lang-current", el.dataset.lang === lang);
+      });
+      setLangMenuOpen(false);
+      if (lang !== document.documentElement.lang) {
+        const destination = document.querySelector(`[data-lang="${lang}"][data-lang-url]`);
+        if (destination) window.location.assign(destination.dataset.langUrl);
+      }
+      return;
+    }
+
     const res = await fetch(`data/i18n/${lang}.json`);
     const dict = await res.json();
 
@@ -52,7 +66,9 @@
     }));
   }
 
-  const initialLang = localStorage.getItem(LANG_KEY) || "en";
+  const initialLang = isLanguagePage
+    ? document.documentElement.lang
+    : localStorage.getItem(LANG_KEY) || "en";
   window.applyI18n = () => {
     if (currentDict) {
       applyTranslations(currentDict);
