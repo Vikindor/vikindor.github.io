@@ -26,27 +26,27 @@ The site is lightweight and framework-free, focusing on clean markup, simple str
 ## 📁 Project structure
 
 ```text
-index.html                  # Main page
-support.html                # Contact methods and feedback form link
-privacy-policy.html         # Privacy policy (EN)
-privacy-policy-ru.html      # Privacy policy (RU)
+index.html                   # Main page
+support/index.html           # Contact methods and feedback form link
+privacy-policy/index.html    # Privacy policy (EN)
+privacy-policy-ru/index.html # Privacy policy (RU)
 .github/workflows/
-  update-metrics.yml        # Fetch project metrics and update the Gist
+  update-metrics.yml         # Fetch project metrics and update the Gist
 css/
-  styles.css                # Shared components and main page styles
-  support.css               # Support page styles
-  privacy-policy.css        # Styles for both privacy policy pages
+  styles.css                 # Shared components and main page styles
+  support.css                # Support page styles
+  privacy-policy.css         # Styles for both privacy policy pages
 data/
-  i18n/                     # Localization files
-  projects.json             # Metrics sources configuration
-fonts/                      # Locally hosted web fonts
-images/                     # Images and UI icons
+  i18n/                      # Localization files
+  projects.json              # Metrics sources configuration
+fonts/                       # Locally hosted web fonts
+images/                      # Images and UI icons
 js/
-  i18n.js                   # Language menu, translations, and language-page navigation
-  metrics.js                # Display project metrics and release dates
-  popup.js                  # Contact popovers and copying on the main page
-  copy.js                   # Contact copying with feedback on the support page
-legacy/                     # Archived previous visual version
+  i18n.js                    # Language menu, translations, and language-page navigation
+  metrics.js                 # Display project metrics and release dates
+  popup.js                   # Contact popovers and copying on the main page
+  copy.js                    # Contact copying with feedback on the support page
+legacy/                      # Archived previous visual version
 ```
 
 ## ℹ️ Notes

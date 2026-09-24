@@ -1,5 +1,6 @@
 (function () {
   const LANG_KEY = "lang";
+  const translationsUrl = new URL("../data/i18n/", document.currentScript.src);
   const isLanguagePage = document.documentElement.hasAttribute("data-lang-page");
   const langMenu = document.querySelector("[data-lang-menu]");
   const langToggle = document.querySelector("[data-lang-toggle]");
@@ -41,7 +42,7 @@
       return;
     }
 
-    const res = await fetch(`data/i18n/${lang}.json`);
+    const res = await fetch(new URL(`${lang}.json`, translationsUrl));
     const dict = await res.json();
 
     currentDict = dict;
